@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Policy = () => {
-    return (
+    const [policy, setPolicy] = useState(true);
+    const hidePolicy = () => setPolicy(false);
+    return policy ? (
         <div className="policy">
             <div className="content">
                 <p>
                     By using this website you agree to your
                     <u>cookie policy</u>
                 </p>
-                <button className="dismiss">Dismiss</button>
+                <button onClick={hidePolicy} className="dismiss">
+                    Dismiss
+                </button>
             </div>
             <style jsx>
                 {`
@@ -23,12 +27,16 @@ const Policy = () => {
                         position: fixed;
                         bottom: 30px;
                     }
+                    button:hover {
+                        opacity: 0.6;
+                    }
                     .content {
                         align-items: center;
                         display: flex;
                         justify-content: space-between;
                         padding: 5px 30px;
-                        width: 40%;
+                        width: 30%;
+                        box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
                         margin: auto;
                         border-radius: 10px;
                         border: 1px solid orange;
@@ -47,7 +55,7 @@ const Policy = () => {
                 `}
             </style>
         </div>
-    );
+    ) : null;
 };
 
 export default Policy;

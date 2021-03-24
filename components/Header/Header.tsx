@@ -40,6 +40,12 @@ const Header = () => {
                         cursor: pointer;
                         margin-top: 0px;
                     }
+                    li:first-child:hover {
+                        opacity: 0.5;
+                    }
+                    li:first-child:hover a {
+                        color: white;
+                    }
                     ul {
                         display: flex;
                         justify-content: space-between;
