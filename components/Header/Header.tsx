@@ -4,7 +4,7 @@ import Logo from "../Logo";
 import styles from "../../styles/Header.module.css";
 
 const Header = () => {
-    const menuLinks = ["Help", "Get Started"];
+    const menuLinks = ["Get Started", "About Us", "FAQs"];
 
     const displayMenu = () => (
         <ul>

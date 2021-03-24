@@ -1,9 +1,16 @@
 import React from "react";
+import { FiPhoneCall } from "react-icons/fi";
 
 const AlertBanner = () => {
     return (
         <div className="alertbanner">
-            <h1>Need help placing an order? Call: +234 703 165 3411</h1>
+            <h1>
+                Need help placing an order?
+                <span>
+                    <FiPhoneCall />
+                </span>
+                Call: +234 703 165 3411
+            </h1>
             <style jsx>
                 {`
                     .alertbanner {
@@ -22,6 +29,9 @@ const AlertBanner = () => {
                         font-weight: bold;
                         margin: 0px;
                         padding: 0px;
+                    }
+                    span {
+                        margin: 0px 10px;
                     }
                 `}
             </style>
