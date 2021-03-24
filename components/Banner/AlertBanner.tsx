@@ -14,7 +14,7 @@ const AlertBanner = () => {
             <style jsx>
                 {`
                     .alertbanner {
-                        background-color: orange;
+                        background-color: #f29100;
                         height: 50px;
                         width: 100%;
                         display: flex;
