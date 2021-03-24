@@ -1,12 +1,14 @@
-import React from 'react'
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Pagelayout from '../containers/Pagelayout'
+import React from "react";
+import Pagelayout from "../containers/Pagelayout";
+import { AlertBanner } from "../components/Banner";
+import { Header } from "../components/Header";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  return (
-    <Pagelayout>
-        
-    </Pagelayout>
-  )
+    return (
+        <Pagelayout>
+            <AlertBanner />
+            <Header />
+        </Pagelayout>
+    );
 }
