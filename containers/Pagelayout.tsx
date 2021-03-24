@@ -3,7 +3,7 @@ import React from "react";
 
 const Pagelayout = ({ children }) => {
     return (
-        <div>
+        <div className="pagelayout">
             <Head>
                 <title>
                     CloudMall Africa | ...Your delivery in less than 1 hour
@@ -27,8 +27,18 @@ const Pagelayout = ({ children }) => {
                 />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
             </Head>
             {children}
+
+            <style jsx>{`
+                .pagelayout {
+                    position: relative;
+                }
+            `}</style>
         </div>
     );
 };
