@@ -26,6 +26,7 @@ const Policy = () => {
                         width: 100%;
                         position: fixed;
                         bottom: 30px;
+                        z-index: 1000;
                     }
                     button:hover {
                         opacity: 0.6;
