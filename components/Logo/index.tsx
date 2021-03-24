@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Logo = () => (
     <div className="logo">
-        <Image src="/logo.svg" height={100} width={100} />
+        <Image src="/main_logo.png" height={80} width={80} />
         <h3>cloudmall</h3>
         <style jsx>{`
             .logo {
@@ -11,6 +11,7 @@ const Logo = () => (
                 align-items: center;
             }
             h3 {
+                margin: 0px;
                 color: black;
             }
         `}</style>

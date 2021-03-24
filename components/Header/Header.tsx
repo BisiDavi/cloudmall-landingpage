@@ -45,6 +45,7 @@ const Header = () => {
                         justify-content: space-between;
                         width: 25%x;
                         align-items: center;
+                        margin: 0px;
                     }
                 `}
             </style>
