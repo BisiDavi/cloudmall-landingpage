@@ -6,6 +6,7 @@ import {
     AlertBanner,
     InfoBanner,
     Newsletter,
+    OrderBanner,
     Policy,
 } from "../components/Banner";
 import { Header } from "../components/Header";
@@ -18,6 +19,7 @@ export default function Home() {
             <Header />
             <MainSlider />
             <InfoBanner />
+            <OrderBanner />
             <Newsletter />
             <Policy />
         </Pagelayout>

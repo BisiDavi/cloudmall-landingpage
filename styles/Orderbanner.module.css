@@ -1,0 +1,41 @@
+.orderbanner {
+    background-color: orange;
+    padding: 50px 100px;
+}
+
+.btnGrp button {
+    background-color: transparent;
+    border: 1px solid white;
+    height: 80px;
+    width: 200px;
+    border-radius: 0px;
+    margin: 0px 20px;
+}
+
+.btnGrp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnGrp button svg {
+    color: white;
+    fill: white;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.column2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}

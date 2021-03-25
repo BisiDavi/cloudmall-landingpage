@@ -9,8 +9,7 @@ const Header = () => {
         {
             name: "Download CloudMall App",
             external: true,
-            link:
-                "https://play.google.com/store/apps/details?id=com.cloudmallng.cloudmall_africa",
+            link: process.env.NEXT_PUBLIC_GOOGLE_LINK,
         },
         { name: "About Us", link: "#about-us" },
         { name: "FAQs", link: "#faqs" },

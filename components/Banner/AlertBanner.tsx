@@ -9,7 +9,7 @@ const AlertBanner = () => {
                 <span>
                     <FiPhoneCall />
                 </span>
-                Call: +234 703 165 3411
+                <a href="tel:+2347031653411">Call: +234 703 165 3411</a>
             </h1>
             <style jsx>
                 {`
@@ -21,6 +21,13 @@ const AlertBanner = () => {
                         align-items: center;
                         justify-content: center;
                         margin: auto;
+                    }
+                    a {
+                        color: white;
+                        font-weight: 1000;
+                    }
+                    a:hover {
+                        text-decoration: none;
                     }
                     h1 {
                         color: white;

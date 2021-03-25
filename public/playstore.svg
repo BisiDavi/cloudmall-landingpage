@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146px" height="39px" viewBox="0 0 146 39" version="1.1">
+    <title>Group 3</title>
+    <g id="Rebranding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage/Logged-in" transform="translate(-77.000000, -3930.000000)" fill="#FFFFFF">
+            <g id="Group-18" transform="translate(55.000000, 3845.000000)">
+                <g id="appstore-badge" transform="translate(0.000000, 78.000000)">
+                    <g id="Group-3" transform="translate(22.000000, 7.000000)">
+                        <text id="Download-on-the" font-family="Muli" font-size="11.5" font-weight="normal">
+                            <tspan x="29" y="14">Download on the</tspan>
+                        </text>
+                        <text id="Google-Play" font-family="Muli-Bold, Muli" font-size="20" font-weight="bold">
+                            <tspan x="29" y="33">Google Play</tspan>
+                        </text>
+                        <path d="M0.5,30.7371672 L0.5,10.5985117 C0.5,9.89575555 0.907423662,9.28829078 1.49866535,9 L13.1479155,20.664404 L1.49398028,32.3333333 C0.905270423,32.0441659 0.5,31.4381109 0.5,30.7371672 Z M16.8436789,24.3648227 L4.1059662,31.7284629 L14.151893,21.6695599 L16.8436789,24.3648227 Z M20.8030366,19.2560012 C21.2267042,19.5807074 21.5,20.0923478 21.5,20.6678394 C21.5,21.2346834 21.2349859,21.7394528 20.8222028,22.0647514 L18.1165746,23.6289326 L15.1557521,20.664404 L18.1145634,17.7017472 L20.8030366,19.2560012 Z M4.11343155,9.60777278 L16.8416676,16.9659044 L14.151893,19.6591297 L4.11343155,9.60777278 Z" id="logo" fill-rule="nonzero"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
