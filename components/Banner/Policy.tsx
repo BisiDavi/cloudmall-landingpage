@@ -47,8 +47,8 @@ const Policy = () => {
                         border: none;
                         height: 40px;
                         border-color: #dfe3ff;
-                        background-color: #dfe3ff;
-                        color: orange;
+                        background-color: orange;
+                        color: white;
                         font-size: 0.875rem;
                         border-radius: 5px;
                         font-weight: bold;

@@ -18,6 +18,17 @@ const Newsletter = () => {
                     <Row className={styles.overlay}></Row>
                     <NewsletterForm />
                 </Col>
+                <style jsx>
+                    {`
+                        h3 {
+                            font-weight: bold;
+                            font-size: 40px;
+                        }
+                        p {
+                            font-size: 20px;
+                        }
+                    `}
+                </style>
             </Row>
         </Container>
     );
