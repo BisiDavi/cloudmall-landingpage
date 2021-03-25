@@ -6,6 +6,7 @@
 
 .newsletter {
     height: 500px;
+    background-image: url("/orange_bg.webp");
 }
 
 .overlay {

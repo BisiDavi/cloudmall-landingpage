@@ -4,7 +4,7 @@ import Pagelayout from "../containers/Pagelayout";
 import styles from "../styles/Home.module.css";
 import {
     AlertBanner,
-    MainBanner,
+    InfoBanner,
     Newsletter,
     Policy,
 } from "../components/Banner";
@@ -17,11 +17,7 @@ export default function Home() {
             <AlertBanner />
             <Header />
             <MainSlider />
-            <Container as="main">
-                {/* <span className={styles.mainbanner}>
-                    <MainBanner />
-                </span> */}
-            </Container>
+            <InfoBanner />
             <Newsletter />
             <Policy />
         </Pagelayout>

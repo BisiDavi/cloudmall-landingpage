@@ -1,0 +1,24 @@
+.image {
+    border-radius: 20px;
+    border: none;
+}
+
+.backView {
+    display: none;
+    height: 240px;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.image:hover + .backView {
+    display: flex;
+    position: absolute;
+    top: 0px;
+}
+
+.backView h3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}

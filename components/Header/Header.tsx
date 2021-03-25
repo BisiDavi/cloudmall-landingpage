@@ -6,20 +6,33 @@ import styles from "../../styles/Header.module.css";
 
 const Header = () => {
     const menuLinks = [
-        { name: "Download CloudMall App", link: "#downloadApp" },
+        {
+            name: "Download CloudMall App",
+            external: true,
+            link:
+                "https://play.google.com/store/apps/details?id=com.cloudmallng.cloudmall_africa",
+        },
         { name: "About Us", link: "#about-us" },
         { name: "FAQs", link: "#faqs" },
     ];
 
     const displayMenu = () => (
         <ul>
-            {menuLinks.map((link) => (
-                <li key={link.name} className="link">
-                    <Link href={link.link} passHref>
-                        <a>{link.name}</a>
-                    </Link>
-                </li>
-            ))}
+            {menuLinks.map(({ link, name, external }) =>
+                external ? (
+                    <li key={name} className="link">
+                        <a target="_blank" href={link}>
+                            {name}
+                        </a>
+                    </li>
+                ) : (
+                    <li key={name} className="link">
+                        <Link href={link} passHref>
+                            <a>{name}</a>
+                        </Link>
+                    </li>
+                )
+            )}
             <style jsx>
                 {`
                     a {

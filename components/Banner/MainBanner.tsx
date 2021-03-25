@@ -27,6 +27,9 @@ const MainBanner = () => {
                         font-size: 23px;
                         margin: 20px 0px;
                         color: white;
+                        width: 80%;
+                        text-align: center;
+                        margin: -10px auto 20px auto;
                     }
                     h4 {
                         margin: 20px 0px;

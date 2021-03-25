@@ -1,14 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Homepageslider.module.css";
+
 const Slider1 = () => {
     const imgArr = [
         {
             id: 1,
             contents: [
-                { url: "/amala.jpeg", name: "Order for Amala" },
+                { url: "/amala.jpeg", id: 1, name: "Order for Amala" },
                 {
                     url: "/beansplantain.jpeg",
+                    id: 2,
                     name: "Order Beans and Plantain",
                 },
             ],
@@ -18,41 +20,50 @@ const Slider1 = () => {
             contents: [
                 {
                     url: "/creamy_icecream.jpeg",
+                    id: 3,
                     name: "Order Ice cream",
                 },
-                { url: "/eba.jpeg", name: "Order Eba" },
+                { url: "/eba.jpeg", id: 4, name: "Order Eba" },
             ],
         },
         {
             id: 3,
             contents: [
-                { url: "/friedrice.jpeg", name: "Order Fried rice" },
-                { url: "/icecream.jpeg", name: "Order Ice cream" },
+                { url: "/friedrice.jpeg", id: 5, name: "Order Fried rice" },
+                { url: "/icecream.jpeg", id: 6, name: "Order Ice cream" },
             ],
         },
         {
             id: 4,
-            contents: [{ url: "/pizza.jpeg", name: "Order Pizza" }],
+            contents: [{ url: "/pizza.jpeg", id: 7, name: "Order Pizza" }],
         },
         {
             id: 5,
             contents: [
-                { url: "/stationary.jpeg", name: "Order Staionary" },
-                { url: "/wine.jpeg" },
+                {
+                    url: "/stationary.webp",
+                    id: 8,
+                    name: "Order for Stationeries",
+                },
+                { url: "/wine.webp", id: 9, name: "Order for Wine" },
             ],
         },
         {
             id: 6,
             contents: [
-                { url: "/yam.jpeg", name: "Order Yam and Egg" },
-                { url: "/whiterice.jpeg", name: "Order for Rice" },
+                { url: "/yam.jpeg", id: 10, name: "Order Yam and Egg" },
+                { url: "/whiterice.webp", id: 11, name: "Order for Rice" },
             ],
         },
         {
             id: 7,
             contents: [
-                { url: "/shawarma.jpeg", name: "Order Shawarma" },
-                { url: "/drugs.jpeg", name: "Order for prescribed drugs" },
+                { url: "/shawarma.jpeg", id: 12, name: "Order Shawarma" },
+                {
+                    url: "/drugs.jpeg",
+                    id: 13,
+                    name: "Order for prescribed drugs",
+                },
             ],
         },
     ];
@@ -63,16 +74,29 @@ const Slider1 = () => {
                 <div key={id} className={`imageplaceholder block-${id}`}>
                     {contents.map((content) => (
                         <div
-                            key={content.name}
-                            className={`item-child child-${content}`}
+                            key={content.id}
+                            className={`item-child child-${content.id}`}
                         >
-                            <Image src={content.url} height={280} width={260} />
+                            <Image
+                                className={styles.image}
+                                src={content.url}
+                                height={240}
+                                width={240}
+                            />
+                            <span className={`back-view ${styles.backView}`}>
+                                <h3>{content.name}</h3>
+                            </span>
                         </div>
                     ))}
                 </div>
             ))}
             <style jsx>
                 {`
+                    .item-child:hover .back-view {
+                        display: flex;
+                        position: absolute;
+                        top: 0px;
+                    }
                     @-webkit-keyframes slideup {
                         from {
                             transform: scaleY(0);
@@ -93,7 +117,7 @@ const Slider1 = () => {
                         display: flex;
                         margin-top: 100px;
                         justify-content: center;
-                        overflow: hidden;
+                        margin-bottom: 10%;
                     }
                     .block {
                         display: flex;
@@ -168,10 +192,12 @@ const Slider1 = () => {
                         color: white;
                         text-align: center;
                         border: none;
+                        flex-direction: column;
                         display: flex;
                         align-items: center;
-                        height: 300px;
-                        width: 220px;
+                        height: 240px;
+                        position: relative;
+                        width: 240px;
                         background-color: gray;
                         justify-content: center;
                         border-radius: 20px;
@@ -193,6 +219,7 @@ const Slider1 = () => {
                     .child-7 {
                         margin-top: 70%;
                     }
+
                     .imageplaceholder {
                         display: flex;
                         justify-content: center;
