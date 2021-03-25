@@ -74,7 +74,7 @@ const Header = () => {
         <Container className={styles.header} fluid>
             <Row>
                 <Col className="d-flex justify-content-between" lg={12} sm={12}>
-                    <Container as="nav" className={styles.nav}>
+                    <Container as="nav" className={`px-5 ${styles.nav}`} fluid>
                         <Logo />
                         {displayMenu()}
                     </Container>

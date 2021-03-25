@@ -1,0 +1,14 @@
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons ul {
+    display: flex;
+}
+
+.icons li {
+    margin: 0px 20px;
+    list-style: none;
+    cursor: pointer;
+}
