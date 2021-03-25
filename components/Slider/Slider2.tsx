@@ -1,6 +1,5 @@
 import React from "react";
-import styles from "../../styles/Homepageslider.module.css";
-const HomepageSlider = () => {
+const Slider2 = () => {
     const imgArr = [
         {
             id: 1,
@@ -181,4 +180,4 @@ const HomepageSlider = () => {
     );
 };
 
-export default HomepageSlider;
+export default Slider2;

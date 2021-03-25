@@ -8,15 +8,14 @@ import {
     Policy,
 } from "../components/Banner";
 import { Header } from "../components/Header";
-import styles from "../styles/Home.module.css";
-import { HomepageSlider } from "../components";
+import { MainSlider } from "../components";
 
 export default function Home() {
     return (
         <Pagelayout>
             <AlertBanner />
             <Header />
-            <HomepageSlider />
+            <MainSlider />
             <Container as="main">
                 <MainBanner />
             </Container>
