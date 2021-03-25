@@ -1,4 +1,8 @@
 .pageslider {
     width: 270px;
-    height: 420px;
+    height: 500px;
+}
+
+.pageslider button {
+    margin: 0px -20px;
 }

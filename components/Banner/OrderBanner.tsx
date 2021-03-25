@@ -17,20 +17,27 @@ const OrderBanner = () => {
                         Save <span>Time</span> & <span>Cost</span>
                     </p>
                     <div className={styles.btnGrp}>
-                        <Button>
-                            <Image
-                                src="/appstore.svg"
-                                height={80}
-                                width={140}
-                            />
-                        </Button>
-                        <Button>
-                            <Image
-                                src="/playstore.svg"
-                                height={80}
-                                width={140}
-                            />
-                        </Button>
+                        <a>
+                            <Button>
+                                <Image
+                                    src="/appstore.svg"
+                                    height={80}
+                                    width={140}
+                                />
+                            </Button>
+                        </a>
+                        <a
+                            target="_blank"
+                            href={process.env.NEXT_PUBLIC_GOOGLE_LINK}
+                        >
+                            <Button>
+                                <Image
+                                    src="/playstore.svg"
+                                    height={80}
+                                    width={140}
+                                />
+                            </Button>
+                        </a>
                     </div>
                 </Col>
                 <Col className={styles.column2} lg={6}>

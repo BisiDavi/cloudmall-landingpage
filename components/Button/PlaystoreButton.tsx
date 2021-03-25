@@ -3,7 +3,7 @@ import React from "react";
 const PlaystoreButton = () => {
     return (
         <div className="playstore">
-            <a href="#playstore-link">
+            <a target="_blank" href={process.env.NEXT_PUBLIC_GOOGLE_LINK}>
                 <svg width="135" height="40" viewBox="0 0 135 40" fill="none">
                     <path
                         d="M130 0H5C2.23858 0 0 2.23858 0 5V35C0 37.7614 2.23858 40 5 40H130C132.761 40 135 37.7614 135 35V5C135 2.23858 132.761 0 130 0Z"

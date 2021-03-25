@@ -1,7 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Pagelayout from "../containers/Pagelayout";
-import styles from "../styles/Home.module.css";
 import {
     AlertBanner,
     InfoBanner,
@@ -11,6 +9,7 @@ import {
 } from "../components/Banner";
 import { Header } from "../components/Header";
 import { MainSlider } from "../components";
+import Footer from "../components/Footer";
 
 export default function Home() {
     return (
@@ -22,6 +21,7 @@ export default function Home() {
             <OrderBanner />
             <Newsletter />
             <Policy />
+            <Footer />
         </Pagelayout>
     );
 }
