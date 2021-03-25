@@ -8,7 +8,7 @@ const MainBanner = () => {
         <Row>
             <Col className="text mt-5" lg={12} xs={12}>
                 <h1>
-                    Get Your Delivery in less than <span>1</span> hour
+                    Get Your Delivery in less than <span>30</span> minutes
                 </h1>
                 <TypewriterEffect />
                 <h4>Order your Pasteries | Groceries | Raw Food</h4>

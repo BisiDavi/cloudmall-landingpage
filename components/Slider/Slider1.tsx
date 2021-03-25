@@ -1,34 +1,59 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../../styles/Homepageslider.module.css";
 const Slider1 = () => {
     const imgArr = [
         {
             id: 1,
-            contents: [1, 2],
+            contents: [
+                { url: "/amala.jpeg", name: "Order for Amala" },
+                {
+                    url: "/beansplantain.jpeg",
+                    name: "Order Beans and Plantain",
+                },
+            ],
         },
         {
             id: 2,
-            contents: [3, 4],
+            contents: [
+                {
+                    url: "/creamy_icecream.jpeg",
+                    name: "Order Ice cream",
+                },
+                { url: "/eba.jpeg", name: "Order Eba" },
+            ],
         },
         {
             id: 3,
-            contents: [5, 6],
+            contents: [
+                { url: "/friedrice.jpeg", name: "Order Fried rice" },
+                { url: "/icecream.jpeg", name: "Order Ice cream" },
+            ],
         },
         {
             id: 4,
-            contents: [7],
+            contents: [{ url: "/pizza.jpeg", name: "Order Pizza" }],
         },
         {
             id: 5,
-            contents: [8, 9],
+            contents: [
+                { url: "/stationary.jpeg", name: "Order Staionary" },
+                { url: "/wine.jpeg" },
+            ],
         },
         {
             id: 6,
-            contents: [10, 11],
+            contents: [
+                { url: "/yam.jpeg", name: "Order Yam and Egg" },
+                { url: "/whiterice.jpeg", name: "Order for Rice" },
+            ],
         },
         {
             id: 7,
-            contents: [12, 13],
+            contents: [
+                { url: "/shawarma.jpeg", name: "Order Shawarma" },
+                { url: "/drugs.jpeg", name: "Order for prescribed drugs" },
+            ],
         },
     ];
 
@@ -38,10 +63,10 @@ const Slider1 = () => {
                 <div key={id} className={`imageplaceholder block-${id}`}>
                     {contents.map((content) => (
                         <div
-                            key={content}
+                            key={content.name}
                             className={`item-child child-${content}`}
                         >
-                            {content}
+                            <Image src={content.url} height={280} width={260} />
                         </div>
                     ))}
                 </div>
