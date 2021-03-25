@@ -6,7 +6,7 @@ import TypewriterEffect from "../Typewriter";
 const MainBanner = () => {
     return (
         <Row>
-            <Col className="text mt-5" lg={7} xs={12}>
+            <Col className="text mt-5" lg={12} xs={12}>
                 <h1>
                     Get Your Delivery in less than <span>1</span> hour
                 </h1>
@@ -18,25 +18,31 @@ const MainBanner = () => {
                     <PlaystoreButton />
                 </div>
             </Col>
-            <Col className="cloudmall-animation" lg={5} xs={12}></Col>
             <style jsx>
                 {`
+                    .text {
+                        color: white;
+                    }
                     h1 {
-                        font-size: 30px;
+                        font-size: 23px;
                         margin: 20px 0px;
+                        color: white;
                     }
                     h4 {
                         margin: 20px 0px;
+                        font-size: 18px;
+                        color: white;
                     }
                     .download-cloudmall {
                         display: flex;
                         justify-content: space-between;
                         width: 300px;
-                        margin: 40px 0px;
+                        margin: 40px auto;
                     }
                     span {
                         color: orange;
                         font-weight: bold;
+                        font-size: 27px;
                     }
                 `}
             </style>

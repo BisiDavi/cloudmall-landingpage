@@ -1,3 +1,28 @@
+.mainSlider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+}
+.sliderText {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    height: 300px;
+}
+.mainbanner {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.18);
+    height: 500px;
+    padding: 50px;
+}
 .pageslider {
     height: 100%;
     width: 100;

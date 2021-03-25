@@ -4,6 +4,7 @@ import { Slider1, Slider2 } from "../index";
 import styles from "../../styles/MainSlider.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { MainBanner } from "../Banner";
 
 const MainSlider: FC = (): JSX.Element => {
     const [sliderState, setSliderState] = useState(true);
@@ -14,8 +15,8 @@ const MainSlider: FC = (): JSX.Element => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 1500,
-        autoplaySpeed: 2500,
+        speed: 3000,
+        autoplaySpeed: 3000,
     };
     const play = () => {
         sliderRef.current.slickPlay();
@@ -28,7 +29,12 @@ const MainSlider: FC = (): JSX.Element => {
     };
 
     return (
-        <div className="mainSlider">
+        <div className={styles.mainSlider}>
+            <span className={styles.sliderText}>
+                <div className={styles.mainbanner}>
+                    <MainBanner />
+                </div>
+            </span>
             <Slider
                 className={`${styles.pageslider} pageslider`}
                 {...settings}
@@ -54,12 +60,6 @@ const MainSlider: FC = (): JSX.Element => {
             <style jsx>{`
                 .slider {
                     width: 100%;
-                }
-                .mainSlider {
-                    height: 100%;
-                    width: 100%;
-                    position: relative;
-                    background-color: #ffa5c8;
                 }
                 .content {
                     color: white;

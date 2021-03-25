@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Pagelayout from "../containers/Pagelayout";
+import styles from "../styles/Home.module.css";
 import {
     AlertBanner,
     MainBanner,
@@ -17,7 +18,9 @@ export default function Home() {
             <Header />
             <MainSlider />
             <Container as="main">
-                <MainBanner />
+                {/* <span className={styles.mainbanner}>
+                    <MainBanner />
+                </span> */}
             </Container>
             <Newsletter />
             <Policy />
