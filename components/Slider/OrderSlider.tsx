@@ -1,4 +1,4 @@
-import React, { useRef, useState, FC } from "react";
+import React, { useRef, FC } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import styles from "../../styles/OrderSlider.module.css";
@@ -18,12 +18,12 @@ const OrderSlider: FC = (): JSX.Element => {
     };
 
     const sliderArr = [
-        "/appBanner.webp",
-        "/appBanner2.webp",
-        "/appBanner3.webp",
-        "/appBanner4.webp",
-        "/appBanner5.webp",
-        "/appBanner6.webp",
+        "/1.jpg",
+        "/2.jpg",
+        "/3.jpg",
+        "/4.jpg",
+        "/5.jpg",
+        "/6.jpg",
     ];
 
     return (

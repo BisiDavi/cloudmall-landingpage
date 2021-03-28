@@ -31,7 +31,8 @@
 
 .column1 p {
     margin: 30px 0px;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 500;
 }
 .column1 {
     display: flex;
