@@ -24,8 +24,6 @@ const OrderSlider: FC = (): JSX.Element => {
         "/appBanner4.webp",
         "/appBanner5.webp",
         "/appBanner6.webp",
-        "/appBanner7.webp",
-        "/appBanner8.webp",
     ];
 
     return (
