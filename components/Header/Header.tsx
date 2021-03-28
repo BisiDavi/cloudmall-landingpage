@@ -8,7 +8,7 @@ const Header = () => {
         <ul>
             <li className="link">
                 <a target="_blank" href={process.env.NEXT_PUBLIC_GOOGLE_LINK}>
-                    Download App
+                    Download app here
                 </a>
             </li>
 
