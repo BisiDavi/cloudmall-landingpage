@@ -11,12 +11,7 @@ const MainBanner = () => {
                     Get Your Delivery in less than <span>30</span> minutes
                 </h1>
                 <TypewriterEffect />
-                <h4>Order your Pasteries | Groceries | Raw Food</h4>
-
-                <div className="download-cloudmall">
-                    <AppstoreButton />
-                    <PlaystoreButton />
-                </div>
+                <h4>Order your Pasteries | Groceries | Raw Food</h4>                
             </Col>
             <style jsx>
                 {`
