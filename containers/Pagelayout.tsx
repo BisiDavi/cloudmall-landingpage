@@ -27,6 +27,11 @@ const Pagelayout = ({ children }) => {
                 />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="icon" href="/favicon.ico" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+                    rel="stylesheet"
+                />
                 <meta
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
@@ -37,11 +42,7 @@ const Pagelayout = ({ children }) => {
             <style jsx>{`
                 .pagelayout {
                     position: relative;
-                }
-                @media (max-width: 768px) {
-                    .pagelayout {
-                        overflow: hidden;
-                    }
+                    overflow: hidden;
                 }
             `}</style>
         </div>

@@ -32,7 +32,7 @@ const MainBanner = () => {
                         margin: -10px auto 20px auto;
                     }
                     h4 {
-                        margin: 20px 0px;
+                        margin: 10px 0px;
                         font-size: 18px;
                         color: white;
                     }
@@ -73,7 +73,7 @@ const MainBanner = () => {
                                 display: flex;
                                 align-items: center;
                                 height: 20px;
-                                margin-bottom: 50px;
+                                margin-bottom: 60px;
                                 flex-direction: column;
                             }
                             .text {

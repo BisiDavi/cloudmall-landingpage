@@ -46,6 +46,15 @@ const Newsletter = () => {
                                 width: 100%;
                             }
                         }
+                        @media (max-width: 768px) {
+                            h3 {
+                                font-size: 25px;
+                                margin-top: 15px;
+                            }
+                            p {
+                                font-size: 15px;
+                            }
+                        }
                     `}
                 </style>
             </Row>

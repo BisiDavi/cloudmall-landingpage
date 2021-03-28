@@ -14,6 +14,16 @@ const Logo = () => (
                 margin: 0px;
                 color: black;
             }
+            @media (max-width: 500px) {
+                .logo {
+                    margin-left: -20px;
+                }
+                .logo h3 {
+                    font-size: 20px;
+                    margin-left: -20px;
+                    font-weight: bold;
+                }
+            }
         `}</style>
     </div>
 );

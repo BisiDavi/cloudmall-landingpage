@@ -6,7 +6,7 @@
 }
 .sliderText {
     position: absolute;
-    top: 0px;
+    top: 50px;
     left: 40%;
     width: 500px;
     z-index: 1000;
@@ -73,6 +73,7 @@
     .sliderText {
         left: 0;
         width: 100%;
+        top: 10px;
     }
     .mainbanner svg {
         width: 100px;
@@ -96,5 +97,17 @@
     .mainbanner {
         height: 280px;
         width: 280px;
+    }
+}
+
+@media (max-width: 1460px) and (min-width: 1050px) {
+    span.sliderText {
+        left: 33%;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 800px) {
+    span.sliderText {
+        left: 25%;
     }
 }
