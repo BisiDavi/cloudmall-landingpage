@@ -25,15 +25,17 @@
 }
 .column1 h1 {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 48px;
+    line-height: 56px;
 }
 
+.column1 p {
+    margin: 24px 0px;
+}
 .column1 {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    margin: auto;        
     color: #3e4044;
     font-weight: bolder;
 }

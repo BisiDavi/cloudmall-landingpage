@@ -8,7 +8,7 @@ const OrderBanner = () => {
     return (
         <Container className={styles.orderbanner} fluid>
             <Row>
-                <Col className={styles.column1} lg={6} sm={12}>
+                <Col className={styles.column1} lg={7} sm={12}>
                     <h1>
                         We Bring Your Favourite Local Store to your Finger tip
                     </h1>
@@ -41,7 +41,7 @@ const OrderBanner = () => {
                         </a>
                     </div>
                 </Col>
-                <Col className={styles.column2} lg={6}>
+                <Col className={styles.column2} lg={5}>
                     <OrderSlider />
                 </Col>
             </Row>
