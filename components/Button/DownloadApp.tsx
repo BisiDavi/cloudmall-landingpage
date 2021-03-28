@@ -3,7 +3,7 @@ import React from "react";
 const DownloadApp = () => {
     return (
         <a target="_blank" href={process.env.NEXT_PUBLIC_GOOGLE_LINK}>
-            <button>Download app here</button>
+            <button>Download App here</button>
             <style jsx>
                 {`
                     a {

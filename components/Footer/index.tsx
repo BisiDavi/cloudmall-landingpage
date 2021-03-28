@@ -62,10 +62,6 @@ const Footer = () => {
                         <span>
                             <Logo />
                         </span>
-                        <div className="btnGrp">
-                            <AppstoreButton />
-                            <PlaystoreButton />
-                        </div>
                     </div>
                 </div>
                 <div className="col-lg-4 col-6">

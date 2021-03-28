@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Logo = () => (
     <div className="logo">
-        <Image src="/main_logo.png" height={80} width={80} />
+        <Image src="/Logo-Blue.svg" height={80} width={80} />
         <h3>cloudmall</h3>
         <style jsx>{`
             .logo {
