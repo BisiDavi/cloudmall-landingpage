@@ -58,7 +58,7 @@ const Footer = () => {
         <footer className="container-fluid">
             <div className="row">
                 <div className="col-lg-4 col-sm-12">
-                    <div className="row">
+                    <div className="row footer-logo">
                         <span>
                             <Logo />
                         </span>
@@ -69,13 +69,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="col-lg-4 col-6">
-                    <div className="row">
+                    <div className="row list">
                         <h1>City</h1>
                         {displayList(cities)}
                     </div>
                 </div>
                 <div className="col-lg-4 col-6">
-                    <div className="row">
+                    <div className="row list">
                         <h1>Popular vendors</h1>
                         {displayList(popularVendors)}
                     </div>
@@ -139,6 +139,16 @@ const Footer = () => {
                 .site-title p {
                     margin: 0px 20px;
                 }
+                .list {
+                    flex-direction: column;
+                }
+                .footer-logo {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .footer-logo div {
+                    margin: 0;
+                }
                 @media (max-width: 768px) {
                     .site-title {
                         justify-content: center;
@@ -161,6 +171,9 @@ const Footer = () => {
                     }
                     .icons {
                         justify-content: center;
+                    }
+                    footer .btnGrp {
+                        width: 100%;
                     }
                 }
             `}</style>

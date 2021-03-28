@@ -22,3 +22,11 @@
     text-align: center;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    span.back-view h3 {
+        font-size: 9px;
+        text-align: center;
+        margin: auto;
+    }
+}

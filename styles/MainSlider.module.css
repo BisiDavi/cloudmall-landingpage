@@ -6,7 +6,7 @@
 }
 .sliderText {
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 40%;
     width: 500px;
     z-index: 1000;
@@ -84,7 +84,17 @@
         width: 100%;
         position: relative;
         background-color: transparent;
-        margin-bottom: 60%;
+        margin-bottom: 22%;
         padding-top: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainSlider {
+        margin-bottom: 45%;
+    }
+    .mainbanner {
+        height: 280px;
+        width: 280px;
     }
 }

@@ -115,7 +115,7 @@ const Slider1 = () => {
                     }
                     .display-image {
                         display: flex;
-                        margin-top: 100px;
+                        margin-top: 0px;
                         justify-content: center;
                         margin-bottom: 10%;
                     }
@@ -235,7 +235,6 @@ const Slider1 = () => {
                             margin-top: 50px;
                             border-radius: 50%;
                             margin-left: 5px;
-                            margin: 50px 5px 5px 5px;
                         }
 
                         .item-child.child-7 {
@@ -248,6 +247,25 @@ const Slider1 = () => {
                         .item-child {
                             height: 100%;
                             width: 100%;
+                        }
+                        .imageplaceholder {
+                            margin: 0px 5px;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .item-child:hover .back-view {
+                            display: flex;
+                            font-size: 10px;
+                            border-radius: 50%;
+                            height: 100%;
+                            width: 100%;
+                            top: 0px;
+                        }
+                    }
+                    @media (max-width: 370px) {
+                        .display-image {
+                            margin-bottom: 55%;
                         }
                     }
                 `}

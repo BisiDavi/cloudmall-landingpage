@@ -46,6 +46,25 @@ const Header = () => {
                         align-items: center;
                         margin: 0px;
                     }
+                    @media (max-width: 768px) {
+                        ul {
+                            justify-content: flex-end;
+                            width: unset;
+                            display: flex;
+                            padding: 0;
+                            margin: 0px;
+                        }
+                        li.link {
+                            height: 30px;
+                            width: 140px;
+                            text-align: center;
+                            padding: 0px;
+                            display: flex;
+                            margin: 0px;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
                 `}
             </style>
         </ul>
@@ -55,7 +74,11 @@ const Header = () => {
         <Container className={styles.header} fluid>
             <Row>
                 <Col className="d-flex justify-content-between" lg={12} sm={12}>
-                    <Container as="nav" className={`px-5 ${styles.nav}`} fluid>
+                    <Container
+                        as="nav"
+                        className={`px-lg-5 px-0 ${styles.nav}`}
+                        fluid
+                    >
                         <Logo />
                         {displayMenu()}
                     </Container>

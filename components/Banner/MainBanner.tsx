@@ -6,7 +6,7 @@ import TypewriterEffect from "../Typewriter";
 const MainBanner = () => {
     return (
         <Row>
-            <Col className="text mt-5" lg={12} xs={12}>
+            <Col className="text mt-lg-5" lg={12} xs={12}>
                 <h1>
                     Get Your Delivery in less than <span>30</span> minutes
                 </h1>
@@ -65,6 +65,20 @@ const MainBanner = () => {
                         }
                         .download-cloudmall div {
                             height: 40px;
+                        }
+                        @media (max-width: 500px) {
+                            h1 {
+                                font-size: 12px;
+                                width: 60%;
+                                display: flex;
+                                align-items: center;
+                                height: 20px;
+                                margin-bottom: 50px;
+                                flex-direction: column;
+                            }
+                            .text {
+                                width: 300px;
+                            }
                         }
                     }
                 `}

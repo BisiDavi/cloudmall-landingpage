@@ -5,7 +5,9 @@
     align-items: center;
     padding: 50px 0;
 }
-
+.banner {
+    background: #ece7e7;
+}
 @media (max-width: 768px) {
     .infobanner {
         padding: 0px;
@@ -14,8 +16,5 @@
         text-align: center;
         font-size: 16px;
         padding: 0px 10px;
-    }
-    .banner{
-        background: #ece7e7; 
     }
 }

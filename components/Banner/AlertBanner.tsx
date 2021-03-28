@@ -40,6 +40,17 @@ const AlertBanner = () => {
                     span {
                         margin: 0px 10px;
                     }
+                    @media (max-width: 768px) {
+                        .alertbanner h1 {
+                            font-size: 3vw;
+                        }
+                    }
+
+                    @media (max-width: 450px) {
+                        .alertbanner h1 {
+                            font-size: 3.5vw;
+                        }
+                    }
                 `}
             </style>
         </div>
