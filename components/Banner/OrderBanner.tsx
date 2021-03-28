@@ -9,13 +9,14 @@ const OrderBanner = () => {
         <Container className={styles.orderbanner} fluid>
             <Row>
                 <Col className={styles.column1} lg={6} sm={12}>
-                    <h1>Order Groceries | Food | Drugs | Stationaries</h1>
-                    <p>Order for your friends</p>
-                    <p>Order for your colleague</p>
-                    <p>Fast Home Delivery</p>
+                    <h1>
+                        We Bring Your Favourite Local Store to your Finger tip
+                    </h1>
                     <p>
-                        Save <span>Time</span> & <span>Cost</span>
+                        Order for your friends, colleagues and get it delivered
+                        quickly
                     </p>
+
                     <div className={styles.btnGrp}>
                         <a>
                             <Button>

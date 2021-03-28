@@ -1,6 +1,7 @@
 .orderbanner {
-    background-color: orange;
+    background-color: white;
     padding: 50px 100px;
+    margin-top: 20px;
 }
 
 .btnGrp button {
@@ -22,6 +23,10 @@
     color: white;
     fill: white;
 }
+.column1 h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
 
 .column1 {
     display: flex;
@@ -29,7 +34,7 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #3e4044;
     font-weight: bolder;
 }
 
