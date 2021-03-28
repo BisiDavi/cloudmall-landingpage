@@ -15,9 +15,9 @@ export default function Home() {
         <Pagelayout>
             <AlertBanner />
             <Header />
+            <OrderBanner />
             <MainSlider />
             <InfoBanner />
-            <OrderBanner />
             <Newsletter />
             {/* <Policy /> */}
             <Footer />
