@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
 import Logo from "../Logo";
 import styles from "../../styles/Header.module.css";
