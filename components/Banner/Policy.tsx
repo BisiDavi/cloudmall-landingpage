@@ -53,6 +53,14 @@ const Policy = () => {
                         border-radius: 5px;
                         font-weight: bold;
                     }
+                    @media (max-width: 768px) {
+                        .policy .content {
+                            padding: 10px;
+                            width: 80%;
+                            font-size: 12px;
+                            justify-content: space-between;
+                        }
+                    }
                 `}
             </style>
         </div>

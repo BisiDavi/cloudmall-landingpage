@@ -5,7 +5,6 @@ import {
     InfoBanner,
     Newsletter,
     OrderBanner,
-    Policy,
 } from "../components/Banner";
 import { Header } from "../components/Header";
 import { MainSlider } from "../components";
@@ -20,7 +19,7 @@ export default function Home() {
             <InfoBanner />
             <OrderBanner />
             <Newsletter />
-            <Policy />
+            {/* <Policy /> */}
             <Footer />
         </Pagelayout>
     );

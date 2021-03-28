@@ -38,6 +38,11 @@ const Pagelayout = ({ children }) => {
                 .pagelayout {
                     position: relative;
                 }
+                @media (max-width: 768px) {
+                    .pagelayout {
+                        overflow: hidden;
+                    }
+                }
             `}</style>
         </div>
     );

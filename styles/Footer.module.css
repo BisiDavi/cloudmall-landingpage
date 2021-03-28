@@ -12,3 +12,9 @@
     list-style: none;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .icons ul {
+        margin-bottom: 0px;
+    }
+}

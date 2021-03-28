@@ -227,6 +227,29 @@ const Slider1 = () => {
                         position: relative;
                         flex-direction: column;
                     }
+
+                    @media (max-width: 768px) {
+                        .imageplaceholder.block-4 {
+                            height: 100%;
+                            width: 100%;
+                            margin-top: 50px;
+                            border-radius: 50%;
+                            margin-left: 5px;
+                            margin: 50px 5px 5px 5px;
+                        }
+
+                        .item-child.child-7 {
+                            height: 100%;
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .item-child {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
                 `}
             </style>
         </div>

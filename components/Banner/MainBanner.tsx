@@ -47,6 +47,26 @@ const MainBanner = () => {
                         font-weight: bold;
                         font-size: 27px;
                     }
+                    @media (max-width: 768px) {
+                        h4 {
+                            font-size: 1.5vh;
+                            text-align: center;
+                        }
+                        .download-cloudmall {
+                            margin: auto;
+                            width: 100%;
+                            padding: 0px 20px;
+                            height: 50px;
+                        }
+                        h1 {
+                            margin: 0px auto 10px auto;
+                            font-size: 16px;
+                            padding: 0px;
+                        }
+                        .download-cloudmall div {
+                            height: 40px;
+                        }
+                    }
                 `}
             </style>
         </Row>

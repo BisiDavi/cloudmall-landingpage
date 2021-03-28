@@ -5,33 +5,14 @@ import Logo from "../Logo";
 import styles from "../../styles/Header.module.css";
 
 const Header = () => {
-    const menuLinks = [
-        {
-            name: "Download CloudMall App",
-            external: true,
-            link: process.env.NEXT_PUBLIC_GOOGLE_LINK,
-        },
-        { name: "About Us", link: "#about-us" },
-        { name: "FAQs", link: "#faqs" },
-    ];
-
     const displayMenu = () => (
         <ul>
-            {menuLinks.map(({ link, name, external }) =>
-                external ? (
-                    <li key={name} className="link">
-                        <a target="_blank" href={link}>
-                            {name}
-                        </a>
-                    </li>
-                ) : (
-                    <li key={name} className="link">
-                        <Link href={link} passHref>
-                            <a>{name}</a>
-                        </Link>
-                    </li>
-                )
-            )}
+            <li className="link">
+                <a target="_blank" href={process.env.NEXT_PUBLIC_GOOGLE_LINK}>
+                    Download App
+                </a>
+            </li>
+
             <style jsx>
                 {`
                     a {
@@ -43,7 +24,7 @@ const Header = () => {
                         text-decoration: none;
                         margin: 0px 20px;
                     }
-                    li:first-child {
+                    li {
                         background-color: orange;
                         border-radius: 10px;
                         color: white;
@@ -52,10 +33,10 @@ const Header = () => {
                         cursor: pointer;
                         margin-top: 0px;
                     }
-                    li:first-child:hover {
+                    li:hover {
                         opacity: 0.5;
                     }
-                    li:first-child:hover a {
+                    li:hover a {
                         color: white;
                     }
                     ul {

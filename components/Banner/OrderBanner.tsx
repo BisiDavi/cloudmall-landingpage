@@ -1,14 +1,14 @@
 import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import Image from "next/image";
-import styles from "../../styles/Orderbanner.module.css";
 import { OrderSlider } from "../Slider";
+import styles from "../../styles/Orderbanner.module.css";
 
 const OrderBanner = () => {
     return (
         <Container className={styles.orderbanner} fluid>
             <Row>
-                <Col className={styles.column1} lg={6}>
+                <Col className={styles.column1} lg={6} sm={12}>
                     <h1>Order Groceries | Food | Drugs | Stationaries</h1>
                     <p>Order for your friends</p>
                     <p>Order for your colleague</p>

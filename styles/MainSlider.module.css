@@ -66,4 +66,25 @@
         bottom: 0px;
         width: 70px;
     }
+    .mainbanner {
+        height: 300px;
+        width: 300px;
+    }
+    .sliderText {
+        left: 0;
+        width: 100%;
+    }
+    .mainbanner svg {
+        width: 100px;
+        height: inherit;
+        margin: 5px;
+    }
+    .mainSlider {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background-color: transparent;
+        margin-bottom: 60%;
+        padding-top: 10%;
+    }
 }

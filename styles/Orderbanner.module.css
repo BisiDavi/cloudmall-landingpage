@@ -39,3 +39,25 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .orderbanner {
+        padding: 15px 10px;
+    }
+    .btnGrp {
+        margin: 0 0 20px 0;
+    }
+    .orderbanner h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .column1 p {
+        margin-bottom: 5px;
+    }
+    .orderbanner button {
+        width: 100px;
+        height: 50px;
+    }
+}

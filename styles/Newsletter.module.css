@@ -51,3 +51,28 @@
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
 }
+
+@media (max-width: 768px) {
+    .newsletterform {
+        padding: 0px 20px;
+    }
+    .newslettertext h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .newslettertext p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .newsletterRow,
+    .newsletter {
+        height: 100%;
+    }
+    .newsletterform input {
+        width: 100%;
+    }
+    .newsletterform button {
+        width: 80%;
+        margin: 0px 0px 20px 0px;
+    }
+}

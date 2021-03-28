@@ -1,5 +1,6 @@
 import React from "react";
 import { AppstoreButton, PlaystoreButton } from "../Button";
+import { v4 as uuidv4 } from "uuid";
 import Logo from "../Logo";
 import styles from "../../styles/Footer.module.css";
 import {
@@ -24,7 +25,7 @@ const Footer = () => {
     const displayList = (listArr) => (
         <ul>
             {listArr.map((list) => (
-                <li key={list}>{list}</li>
+                <li key={uuidv4()}>{list}</li>
             ))}
             <style jsx>
                 {`
@@ -37,6 +38,17 @@ const Footer = () => {
                         font-weight: bold;
                         font-size: 20px;
                     }
+                    @media (max-width: 768px) {
+                        ul {
+                            padding: 0;
+                            margin-top: 0px;
+                        }
+                        ul li {
+                            list-style: none;
+                            font-size: 15px;
+                            font-weight: normal;
+                        }
+                    }
                 `}
             </style>
         </ul>
@@ -45,33 +57,39 @@ const Footer = () => {
     return (
         <footer className="container-fluid">
             <div className="row">
-                <div className="col-lg-4">
-                    <span>
-                        <Logo />
-                    </span>
-                    <div className="btnGrp">
-                        <AppstoreButton />
-                        <PlaystoreButton />
+                <div className="col-lg-4 col-sm-12">
+                    <div className="row">
+                        <span>
+                            <Logo />
+                        </span>
+                        <div className="btnGrp">
+                            <AppstoreButton />
+                            <PlaystoreButton />
+                        </div>
                     </div>
                 </div>
-                <div className="col-lg-4">
-                    <h1>City</h1>
-                    {displayList(cities)}
+                <div className="col-lg-4 col-6">
+                    <div className="row">
+                        <h1>City</h1>
+                        {displayList(cities)}
+                    </div>
                 </div>
-                <div className="col-lg-4">
-                    <h1>Popular vendors</h1>
-                    {displayList(popularVendors)}
+                <div className="col-lg-4 col-6">
+                    <div className="row">
+                        <h1>Popular vendors</h1>
+                        {displayList(popularVendors)}
+                    </div>
                 </div>
             </div>
             <div className="row copyright">
-                <div className="col-lg-6 col-xs-12 site-title">
+                <div className="col-lg-6 col-sm-12 site-title">
                     <span>
                         <FaCopyright />
                     </span>
                     <p>{currentYear} Cloudmall Africa</p>
                 </div>
-                <div className={`col-lg-6 col-xs-12 icons ${styles.icons}`}>
-                    {displayList(SocialIcons)}
+                <div className={`col-lg-6 col-sm-12 icons ${styles.icons}`}>
+                    <div className="row">{displayList(SocialIcons)}</div>
                 </div>
             </div>
             <style jsx>{`
@@ -93,7 +111,7 @@ const Footer = () => {
                 h1 {
                     font-size: 25px;
                 }
-                .col-lg-4 {
+                .col-lg-4 col-sm-12 {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -120,6 +138,30 @@ const Footer = () => {
                 }
                 .site-title p {
                     margin: 0px 20px;
+                }
+                @media (max-width: 768px) {
+                    .site-title {
+                        justify-content: center;
+                    }
+                    .copyright {
+                        margin-top: 0px;
+                    }
+                    h1 {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    footer.container-fluid {
+                        padding: 0px;
+                    }
+                    footer.container-fluid .row {
+                        padding: 10px 20px;
+                    }
+                    .col-6 .row {
+                        flex-direction: column;
+                    }
+                    .icons {
+                        justify-content: center;
+                    }
                 }
             `}</style>
         </footer>
