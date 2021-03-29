@@ -6,3 +6,7 @@
 .pageslider button {
     margin: 0px -20px;
 }
+
+.pageslider button::before {
+    color: #ffb647;
+}
