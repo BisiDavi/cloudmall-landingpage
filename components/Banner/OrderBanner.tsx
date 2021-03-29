@@ -10,7 +10,7 @@ const OrderBanner = () => {
             <Row>
                 <Col className={styles.column1} lg={7} sm={12}>
                     <h1>
-                        We bring your favourite local store to your finger tips.
+                        We bring your <span>favourite local stores </span> to your finger tips.
                     </h1>
                     <p>
                         Order for your friends, colleagues and get it delivered

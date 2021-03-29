@@ -1,7 +1,11 @@
 .orderbanner {
-    background-color: white;
+    background-color: #faf5ed;
     padding: 50px 100px;
     margin-top: 20px;
+}
+
+.orderbanner h1 span{
+    color: #0156df;
 }
 
 .btnGrp button {
