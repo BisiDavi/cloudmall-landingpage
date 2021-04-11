@@ -18,10 +18,16 @@ const Footer = () => {
     const cities = ["Lagos", "Ile-Ife"];
     const popularVendors = ["Banwil", "Ace", "Nissi Foods"];
     const SocialIcons = [
-        <FaFacebook />,
-        <FaInstagram />,
-        <FaTwitter />,
-        <FaMedium />,
+        {
+            icon: <FaFacebook />,
+            link: "https://m.facebook.com/cloudmallafrica/",
+        },
+        {
+            icon: <FaInstagram />,
+            link: "https://instagram.com/cloudmallafrica",
+        },
+        { icon: <FaTwitter />, link: "https://twitter.com/cloudmallafrica" },
+        { icon: <FaMedium />, link: "https://link.medium.com/Z8cgBNZ5mfb" },
     ];
     const displayList = (listArr) => (
         <ul>
@@ -54,7 +60,52 @@ const Footer = () => {
             </style>
         </ul>
     );
-
+    const displaySocalLink = () => (
+        <ul>
+            {SocialIcons.map((link, index) => (
+                <li key={index}>
+                    <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={link.link}
+                    >
+                        {link.icon}
+                    </a>
+                </li>
+            ))}
+            <style jsx>
+                {`
+                    a {
+                        text-decoration: none;
+                        font-size: 1em;
+                    }
+                    a:hover {
+                        color: red;
+                    }
+                    ul {
+                        padding: 0px;
+                        margin-top: 20px;
+                    }
+                    li {
+                        list-style: none;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                    @media (max-width: 768px) {
+                        ul {
+                            padding: 0;
+                            margin-top: 0px;
+                        }
+                        ul li {
+                            list-style: none;
+                            font-size: 15px;
+                            font-weight: normal;
+                        }
+                    }
+                `}
+            </style>
+        </ul>
+    );
     return (
         <footer className="container-fluid">
             <div className="row">
@@ -63,12 +114,14 @@ const Footer = () => {
                         <span>
                             <Logo />
                         </span>
-                        <Link href="/terms-and-conditions" passHref>
-                            <a>Our Terms & Conditions</a>
-                        </Link>
-                        <Link href="/privacy-policies" passHref>
-                            <a>Our Privacy Policies</a>
-                        </Link>
+                        <div className="footer-links">
+                            <Link href="/terms-and-conditions" passHref>
+                                <a>Our Terms & Conditions</a>
+                            </Link>
+                            <Link href="/privacy-policies" passHref>
+                                <a>Our Privacy Policies</a>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <div className="col-lg-4 col-6">
@@ -92,7 +145,7 @@ const Footer = () => {
                     <p>{currentYear} Cloudmall Africa</p>
                 </div>
                 <div className={`col-lg-6 col-sm-12 icons ${styles.icons}`}>
-                    <div className="row">{displayList(SocialIcons)}</div>
+                    <div className="row">{displaySocalLink()}</div>
                 </div>
             </div>
             <style jsx>{`
@@ -101,6 +154,9 @@ const Footer = () => {
                     color: white;
                     width: 100%;
                     padding: 70px 50px;
+                }
+                .footer-links {
+                    margin-top: 15px;
                 }
                 .btnGrp {
                     display: flex;

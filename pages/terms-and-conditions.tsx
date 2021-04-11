@@ -7,12 +7,12 @@ const TermsAndConditions = () => {
         <Pagelayout title="Terms & Conditions">
             <Container>
                 <Row>
-                    <Col>
+                    <Col className="py-4">
                         <h1 className="text-center">
                             Terms & Conditions of Use{" "}
                         </h1>
                         <h3>1. USER’S AGREEMENT</h3>
-                        <h4>
+                        <h5>
                             This Terms and Conditions of Use (“T&C”) refer to
                             terms and conditions between Africa Technological
                             Innovation Systems also known as “Cloudmall Africa”
@@ -28,7 +28,7 @@ const TermsAndConditions = () => {
                             Cloudmall Africa in pursuance of this T&C, this T&C
                             shall immediately crystallise into a binding
                             contract between Cloudmall Africa and the User.
-                        </h4>
+                        </h5>
                         <h3>2. INTRODUCTION</h3>
                         <p>
                             <b>2.1.</b> For all intents and official purposes,
@@ -91,8 +91,6 @@ const TermsAndConditions = () => {
                             that may be relied upon for making decisions. They
                             may not also be regarded as unsolicited promotions.{" "}
                         </p>
-                        <br />
-                        <br />
                         <p>
                             Cloudmall Africa’s website is{" "}
                             <u> cloudmall.africa </u> (“Official Website”).
@@ -101,9 +99,7 @@ const TermsAndConditions = () => {
                             to Cloudmall Africa may be directed to the Official
                             Email.
                         </p>
-                        <br />
                         <h3>3. SCOPE OF THE TERMS AND CONDITIONS OF USE </h3>
-                        <br />
                         <p>
                             <b> 3.1. </b> This T&C shall be applicable to all
                             the delivery services and products made available by
@@ -148,7 +144,6 @@ const TermsAndConditions = () => {
                             none of the personal information supplied violates
                             any part of this T&C.{" "}
                         </p>{" "}
-                        <br />
                         <p>
                             Consequently, Cloudmall Africa reserves the absolute
                             right to restrict, suspend, and/or terminate the
@@ -158,7 +153,6 @@ const TermsAndConditions = () => {
                             inaccurate information to Cloudmall Africa on the
                             platform without giving the reasons.
                         </p>{" "}
-                        <br />
                         <p>
                             <b> 3.6.</b> Cloudmall Africa reserves the right and
                             prerogative to delegate the enforcement, rights,
@@ -178,7 +172,6 @@ const TermsAndConditions = () => {
                             conditions included in the additional documents
                             shall be deemed as a violation of this T&C.
                         </p>
-                        <br />
                         <p>
                             Therefore, the User also acknowledges the right of
                             Cloudmall Africa to suspend or terminate the User’s
@@ -196,9 +189,7 @@ const TermsAndConditions = () => {
                             time to understand the amendments or change effected
                             on this T&C.
                         </p>
-                        <br />
                         <h3> 4. ORDERS </h3>
-                        <br />
                         <p>
                             {" "}
                             <b> 4.1. </b> The User is to use Cloudmall Africa’s
@@ -271,9 +262,7 @@ const TermsAndConditions = () => {
                             subject to Cloudmall Africa’s approval and
                             availability of funds for the replacement order.
                         </p>
-                        <br />
                         <h3> 5. SERVICES</h3>
-                        <br />
                         <p>
                             {" "}
                             <b> 5.1.</b> To place an order through the Platform,
@@ -316,8 +305,6 @@ const TermsAndConditions = () => {
                             or by sending an email to the official email address
                             of Cloudmall Africa.
                         </p>
-                        <br />
-                        <br />
                         <h3>6. INTELLECTUAL PROPERTY</h3>
                         <p>
                             <b> 6.1.</b> Excluding third-party content, all
@@ -374,11 +361,8 @@ const TermsAndConditions = () => {
                             or records by the User or third party may be denied
                             accordingly.{" "}
                         </p>
-                        <br />
                         <h3>7. FINANCIAL TRANSACTIONS</h3>
-                        <br />
                         <h5>7.1. PAYMENT</h5>
-                        <br />
                         <p>
                             <b>7.1.1.</b> Cloudmall Africa‘s official website
                             provides a list of applicable payment methods
@@ -410,9 +394,7 @@ const TermsAndConditions = () => {
                             his/her account may be restricted, suspended or
                             terminated.
                         </p>
-                        <br />
                         <h5>7.2. REFUND POLICY</h5>
-                        <br />
                         <p>
                             <b>7.2.1.</b> It is the User’s responsibility to
                             check the condition of orders received, at the time
@@ -449,9 +431,7 @@ const TermsAndConditions = () => {
                             the customer service hotline within 24 hours from
                             the time of delivery.
                         </p>
-                        <br />
                         <h5>7.3. COMMISSIONS, FEES & CHARGES</h5>
-                        <br />
                         <p>
                             <b>7.3.1.</b> The User agrees to pay all fees
                             required for the successful placement of an order
@@ -473,11 +453,8 @@ const TermsAndConditions = () => {
                             change these charges before payment is made by the
                             User.
                         </p>
-                        <br />
                         <h3>8. MISCELLANEOUS</h3>
-                        <br />
                         <h5>8.1. BONUSES, REWARDS & PROMOTIONS</h5>
-                        <br />
                         <p>
                             <b>8.1.1.</b> Bonuses, rewards and/or promotions may
                             be offered by Vendors or Cloudmall Africa to a User,
@@ -506,9 +483,7 @@ const TermsAndConditions = () => {
                             misuse of the benefits by the User may occasion
                             appropriate legal actions.
                         </p>
-                        <br />
                         <h3>8.2. ELECTRONIC SIGNATURE</h3>
-                        <br />
                         <p>
                             <b>8.2.1</b>. The User acknowledges and agrees to
                             the use of electronic signature/consent in respect
@@ -520,9 +495,7 @@ const TermsAndConditions = () => {
                             electronic signature under this T&C and shall be
                             legally binding on the User.
                         </p>
-                        <br />
                         <h3>9. TERMINATION OF AGREEMENT</h3>
-                        <br />
                         <p>
                             <b>9.1. </b>Each party may terminate this T&C
                             provided that the termination shall be without
@@ -555,9 +528,7 @@ const TermsAndConditions = () => {
                             convert User’s wallet funds to settle his/her
                             unfulfilled obligations.{" "}
                         </p>
-                        <br />
                         <h3>10. DISPUTE RESOLUTION</h3>
-                        <br />
                         <p>
                             <b>10.1.</b> The parties will attempt to settle any
                             claim or controversy arising out of this Agreement
@@ -599,11 +570,8 @@ const TermsAndConditions = () => {
                             all such arbitration proceedings will be held in
                             Lagos State at a venue to be agreed by the parties.
                         </p>
-                        <br />
                         <h3>11. GENERAL PROVISIONS</h3>
-                        <br />
-                        <br />
-                        <h5>11.1. PRIVACY POLICY:</h5> <br />
+                        <h5>11.1. PRIVACY POLICY:</h5>
                         <p>
                             <b>11.1.</b> The User hereby confirms the legal
                             capacity to give consent and hereby voluntarily
@@ -630,9 +598,7 @@ const TermsAndConditions = () => {
                             read and agreed to all the terms contained in
                             Cloudmall Africa’s Privacy Policy.
                         </p>
-                        <br />
                         <h3>11.2. LIMITATION ON LIABILITY: </h3>
-                        <br />
                         <p>
                             <b>11.2.1.</b> Except in cases of death or personal
                             injury caused by either party's negligence, either
@@ -661,9 +627,7 @@ const TermsAndConditions = () => {
                             third party website, or your consumption of any food
                             or beverages from a Vendor.
                         </p>
-                        <br />
                         <h5>11.3. FORCE MAJEURE: </h5>
-                        <br />
                         <p>
                             <b>11.3.1.</b>1. Either Party shall not liable for
                             any failure to perform due to causes beyond its
@@ -674,13 +638,11 @@ const TermsAndConditions = () => {
                             other acts which may be due to unforeseen
                             circumstances.
                         </p>
-                        <br />
-                        <h5>11.4. GOVERNING LAW:</h5> <br />
+                        <h5>11.4. GOVERNING LAW:</h5>
                         <p>
                             <b>11.4.1.</b> This Agreement shall be governed by
                             the Acts of the Federal Republic of Nigeria.
                         </p>
-                        <br />
                         <h3>INTERPRETATION </h3>
                         <p>
                             The terminologies used in this T&C are defined and
@@ -763,6 +725,24 @@ const TermsAndConditions = () => {
                         </p>
                         <h5>Vendors </h5>
                         <p>The suppliers of orders placed by Users.</p>
+                        <style jsx>
+                            {`
+                                li {
+                                    list-style: none;
+                                }
+                                h1,
+                                h3,
+                                h5 {
+                                    margin-bottom: 15px;
+                                }
+                                h1,
+                                h3,
+                                h5,
+                                p {
+                                    font-family: "Roboto", sans-serif;
+                                }
+                            `}
+                        </style>
                     </Col>
                 </Row>
             </Container>

@@ -7,26 +7,27 @@ const Privacypolicy = () => {
         <Pagelayout title="Privacy Policies">
             <Container>
                 <Row>
-                    <Col>
+                    <Col className="py-4">
                         <h1 className="text-center">PRIVACY POLICY</h1>
                         <h1 className="text-center">CLOUDMALL AFRICA</h1>
-                        <br /> <h3>1. INTRODUCTION</h3>
-                        <br />
-                        This Privacy Policy (also referred hereinafter as the
-                        “Policy”) is an Agreement between Africa Technological
-                        Innovation Systems (or “Cloudmall Africa”) and the User
-                        (“User” or “Customer”) of Cloudmall Africa’s services,
-                        products and facilities within the definition provided
-                        by the Terms and Conditions of Service (hereinafter
-                        referred to as “T&C”). For all intents and official
-                        purposes, the Partners who have together formed the
-                        ongoing business - Africa Technological Innovation
-                        Systems - retain the legal rights and acts in the
-                        official capacity for Cloudmall Africa and this Policy
-                        shall be binding on Cloudmall Africa as if the same was
-                        entered into with the Partners.
-                        <br /> <h3>1.2: PRIVACY RIGHTS</h3>
-                        <br />
+                        <h3>1. INTRODUCTION</h3>
+                        <h5>
+                            This Privacy Policy (also referred hereinafter as
+                            the “Policy”) is an Agreement between Africa
+                            Technological Innovation Systems (or “Cloudmall
+                            Africa”) and the User (“User” or “Customer”) of
+                            Cloudmall Africa’s services, products and facilities
+                            within the definition provided by the Terms and
+                            Conditions of Service (hereinafter referred to as
+                            “T&C”). For all intents and official purposes, the
+                            Partners who have together formed the ongoing
+                            business - Africa Technological Innovation Systems -
+                            retain the legal rights and acts in the official
+                            capacity for Cloudmall Africa and this Policy shall
+                            be binding on Cloudmall Africa as if the same was
+                            entered into with the Partners.
+                        </h5>
+                        <h3>1.2 PRIVACY RIGHTS</h3>
                         <p>
                             <b>1.2.1 </b>This Privacy Policy describes the
                             User’s privacy rights regarding our collection, use,
@@ -50,9 +51,7 @@ const Privacypolicy = () => {
                             than you knows your security details, you must
                             promptly notify us at cloudmallnigeria@gmail.com
                         </p>
-                        <br />
                         <h5>1.3: CONSENT </h5>
-                        <br />
                         <p>
                             You accept this Privacy Policy when you give consent
                             upon access to our platforms, or use our services,
@@ -81,10 +80,8 @@ const Privacypolicy = () => {
                             25, Ooni Crownland Estate, Damico, Ile-Ife, Osun
                             State.
                         </p>
-                        <br /> <h3>2. INFORMATION & DATA RECORDS</h3>
-                        <br />
+                        <h3>2. INFORMATION & DATA RECORDS</h3>
                         <h5>2.1. PERSONAL INFORMATION </h5>
-                        <br />
                         <p>
                             <b>2.1.1.</b> The Customer must ensure that all
                             necessary information is immediately made available
@@ -132,8 +129,7 @@ const Privacypolicy = () => {
                             User may also delete the personal account subject to
                             this Policy.
                         </p>
-                        <br /> <h3>2.2. DATA RECORDS</h3>
-                        <br />
+                        <h3>2.2. DATA RECORDS</h3>
                         <p>
                             <b>2.2.1.</b> The Customer consents that in the
                             event that Cloudmall Africa requires additional
@@ -198,8 +194,7 @@ const Privacypolicy = () => {
                             6 years before permanently removing the account from
                             its data archives.
                         </p>
-                        <br /> <h3>3. YOUR PERSONAL INFORMATION</h3>
-                        <br />
+                        <h3>3. YOUR PERSONAL INFORMATION</h3>
                         <p>
                             <b>3.1.</b>When you use our Services, we collect
                             information sent to us by your computer, mobile
@@ -232,9 +227,7 @@ const Privacypolicy = () => {
                             by Cloudmall Africa and we are therefore not liable
                             for how they use it.
                         </p>
-                        <br />
                         <h3>4. WHAT WE DO WITH YOUR PERSONAL INFORMATION</h3>
-                        <br />
                         <ul>
                             <p>Cloudmall Africa may use your information to:</p>
                             <li>
@@ -336,9 +329,7 @@ const Privacypolicy = () => {
                                 </p>
                             </li>
                         </ul>
-                        <br />
                         <h3>5. HOW WE PROTECT YOUR PERSONAL INFORMATION</h3>
-                        <br />
                         <p>
                             <b>5.1.</b> We store and process your personal
                             information on our computers in Nigeria using high
@@ -348,7 +339,6 @@ const Privacypolicy = () => {
                             it has been given. If the data matches the rules,
                             it's allowed to pass.
                         </p>
-                        <br />
                         <p>
                             We also encourage Users to activate the
                             Two-Factor-Authentication. It confirms a user’s
@@ -357,7 +347,6 @@ const Privacypolicy = () => {
                             be an answer to a “secret question” or perhaps a PIN
                             that was sent to their cell phone.{" "}
                         </p>
-                        <br />
                         <p>
                             <b>5.2.</b> Where we need to transfer your data to
                             another country, such a country must have an
@@ -373,12 +362,10 @@ const Privacypolicy = () => {
                             alteration. 
                         </p>
                          
-                        <br />
                         <h3>
                             6. HOW WE SHARE YOUR INFORMATION WITHIN CLOUDMALL
                             AFRICA AND THIRD PARTIES
                         </h3>
-                        <br />
                         <p>
                             <b>6.1.</b> We work with third parties and are
                             responsible to government agencies. In carrying out
@@ -398,18 +385,14 @@ const Privacypolicy = () => {
                             purposes by us. This does not include your trademark
                             or copyrighted materials.
                         </p>
-                        <br />
                         <h3>7. DATA CONFIDENTIALITY RIGHTS</h3>
-                        <br />
                         <p>
                             Your information is regarded as confidential and
                             will not be divulged to any third party except under
                             legal and/or regulatory conditions or in compliance
                             with our “T&C” or this Policy.
                         </p>
-                        <br />
                         <h3>8. LINKS TO OTHER WEBSITES AND PREMISES</h3>
-                        <br />
                         <p>
                             Certain transaction processing channels may require
                             links to other websites or Organisations other than
@@ -437,9 +420,7 @@ const Privacypolicy = () => {
                             caused, resulting from your disclosure to third
                             parties of personal information.
                         </p>
-                        <br />
                         <h3>COOKIE POLICY</h3>
-                        <br />
                         <p>What are Cookies?</p>
                         <p>
                             Cookies are small files placed on your computer’s
@@ -471,7 +452,6 @@ const Privacypolicy = () => {
                                 <p>• Advertising Cookies</p>
                             </li>
                         </ul>
-                        <br />
                         <h5>Your Consent</h5>
                         <p>
                             By either agreeing to our T&C and using any of our
@@ -480,6 +460,24 @@ const Privacypolicy = () => {
                             use Cookies optimise the User’s website or other
                             platform experience.
                         </p>
+                        <style jsx>
+                            {`
+                                li {
+                                    list-style: none;
+                                }
+                                h1,
+                                h3,
+                                h5 {
+                                    margin-bottom: 15px;
+                                }
+                                h1,
+                                h3,
+                                h5,
+                                p {
+                                    font-family: "Roboto", sans-serif;
+                                }
+                            `}
+                        </style>
                     </Col>
                 </Row>
             </Container>
