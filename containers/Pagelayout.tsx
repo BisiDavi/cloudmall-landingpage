@@ -1,5 +1,8 @@
-import Head from "next/head";
 import React from "react";
+import Head from "next/head";
+import { AlertBanner, Policy } from "../components/Banner";
+import { Header, Footer } from "../components";
+
 
 const Pagelayout = ({ children }) => {
     return (
@@ -37,8 +40,11 @@ const Pagelayout = ({ children }) => {
                     content="initial-scale=1.0, width=device-width"
                 />
             </Head>
+            <AlertBanner />
+            <Header />
             {children}
-
+            <Policy />
+            <Footer />
             <style jsx>{`
                 .pagelayout {
                     position: relative;

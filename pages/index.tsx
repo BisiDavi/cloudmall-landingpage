@@ -14,8 +14,7 @@ import Footer from "../components/Footer";
 export default function Home() {
     return (
         <Pagelayout>
-            <AlertBanner />
-            <Header />
+           
             <OrderBanner />
             <MainSlider />
             <InfoBanner />
