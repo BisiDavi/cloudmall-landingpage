@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { PageLayout } from "../containers";
+import { Pagelayout } from "../containers";
 
 const TermsAndConditions = () => {
     return (
-        <PageLayout>
+        <Pagelayout>
             <Container>
                 <Row>
                     <Col>
@@ -764,7 +764,7 @@ const TermsAndConditions = () => {
                     </Col>
                 </Row>
             </Container>
-        </PageLayout>
+        </Pagelayout>
     );
 };
 
