@@ -111,17 +111,15 @@ const Footer = () => {
             <div className="row">
                 <div className="col-lg-4 col-sm-12">
                     <div className="row footer-logo">
-                        <span>
+                        <span className="footer-logo">
                             <Logo />
                         </span>
-                        <div className="footer-links">
-                            <Link href="/terms-and-conditions" passHref>
-                                <a>Our Terms & Conditions</a>
-                            </Link>
-                            <Link href="/privacy-policies" passHref>
-                                <a>Our Privacy Policies</a>
-                            </Link>
-                        </div>
+                        <Link href="/terms-and-conditions" passHref>
+                            <a>Our Terms & Conditions</a>
+                        </Link>
+                        <Link href="/privacy-policies" passHref>
+                            <a>Our Privacy Policies</a>
+                        </Link>
                     </div>
                 </div>
                 <div className="col-lg-4 col-6">
@@ -155,8 +153,8 @@ const Footer = () => {
                     width: 100%;
                     padding: 70px 50px;
                 }
-                .footer-links {
-                    margin-top: 15px;
+                .footer-logo {
+                    margin-bottom: 10px;
                 }
                 .btnGrp {
                     display: flex;
