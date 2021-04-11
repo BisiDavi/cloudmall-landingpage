@@ -5,7 +5,7 @@ import { MainSlider } from "../components";
 
 export default function Home() {
     return (
-        <Pagelayout>
+        <Pagelayout title="...Your delivery in less than 1 hour">
             <OrderBanner />
             <MainSlider />
             <InfoBanner />

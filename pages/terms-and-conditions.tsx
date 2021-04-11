@@ -4,11 +4,13 @@ import { Pagelayout } from "../containers";
 
 const TermsAndConditions = () => {
     return (
-        <Pagelayout>
+        <Pagelayout title="Terms & Conditions">
             <Container>
                 <Row>
                     <Col>
-                        <h1>Terms & Conditions of Use </h1>
+                        <h1 className="text-center">
+                            Terms & Conditions of Use{" "}
+                        </h1>
                         <h3>1. USER’S AGREEMENT</h3>
                         <h4>
                             This Terms and Conditions of Use (“T&C”) refer to

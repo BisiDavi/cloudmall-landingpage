@@ -4,12 +4,12 @@ import { AlertBanner, Policy } from "../components/Banner";
 import { Header, Footer } from "../components";
 
 
-const Pagelayout = ({ children }) => {
+const Pagelayout = ({ children, title }) => {
     return (
         <div className="pagelayout">
             <Head>
                 <title>
-                    CloudMall Africa | ...Your delivery in less than 1 hour
+                    CloudMall Africa | {title}
                 </title>
                 <link
                     rel="apple-touch-icon"

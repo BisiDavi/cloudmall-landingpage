@@ -1,14 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Pagelayout } from "../containers";
 
 const Privacypolicy = () => {
     return (
-        <Pagelayout>
+        <Pagelayout title="Privacy Policies">
             <Container>
                 <Row>
                     <Col>
-                        <h1>PRIVACY POLICY</h1>
-                        <h1>CLOUDMALL AFRICA</h1>
+                        <h1 className="text-center">PRIVACY POLICY</h1>
+                        <h1 className="text-center">CLOUDMALL AFRICA</h1>
                         <br /> <h3>1. INTRODUCTION</h3>
                         <br />
                         This Privacy Policy (also referred hereinafter as the
