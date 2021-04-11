@@ -63,11 +63,11 @@ const Footer = () => {
                         <span>
                             <Logo />
                         </span>
-                        <Link href="terms-and-conditions" passHref>
-                        <a>Our Terms & Conditions</a>
+                        <Link href="/terms-and-conditions" passHref>
+                            <a>Our Terms & Conditions</a>
                         </Link>
-                        <Link href="privacy-policies" passHref>
-                        <a>Our Privacy Policies</a>
+                        <Link href="/privacy-policies" passHref>
+                            <a>Our Privacy Policies</a>
                         </Link>
                     </div>
                 </div>
@@ -110,7 +110,16 @@ const Footer = () => {
                     margin: auto;
                     align-items: center;
                 }
-
+                .row.footer-logo a {
+                    margin: 3px 10px;
+                    font-weight: bold;
+                    color: white;
+                    font-size: 20px;
+                }
+                .row.footer-logo a:hover {
+                    text-decoration: none;
+                    color: red;
+                }
                 h1 {
                     font-size: 25px;
                 }
