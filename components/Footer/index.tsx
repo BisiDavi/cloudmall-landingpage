@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { AppstoreButton, PlaystoreButton } from "../Button";
 import { v4 as uuidv4 } from "uuid";
 import Logo from "../Logo";
@@ -62,6 +63,12 @@ const Footer = () => {
                         <span>
                             <Logo />
                         </span>
+                        <Link href="terms-and-conditions" passHref>
+                        <a>Our Terms & Conditions</a>
+                        </Link>
+                        <Link href="privacy-policies" passHref>
+                        <a>Our Privacy Policies</a>
+                        </Link>
                     </div>
                 </div>
                 <div className="col-lg-4 col-6">

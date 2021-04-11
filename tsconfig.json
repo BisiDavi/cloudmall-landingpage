@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Slider/Slider1.tsx"  ],
+, "components/Slider/Slider1.tsx", "pages/terms-and-conditions"  ],
   "exclude": [
     "node_modules"
   ]
