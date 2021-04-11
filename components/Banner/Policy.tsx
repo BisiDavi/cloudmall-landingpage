@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
-const Policy = () => {
+const Policy = ({ showModal }) => {
     const [policy, setPolicy] = useState(true);
     const hidePolicy = () => setPolicy(false);
     return policy ? (
         <div className="policy">
             <div className="content">
                 <p>
-                    By using this website you agree to your
-                    <u>cookie policy</u>
+                    By using this website you agree to our
+                    <span onClick={showModal}>cookie policy</span>
                 </p>
                 <button onClick={hidePolicy} className="dismiss">
                     Dismiss
@@ -16,6 +16,11 @@ const Policy = () => {
             </div>
             <style jsx>
                 {`
+                    span {
+                        margin: 0px 3px;
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
                     u {
                         margin: 0px 10px;
                     }
