@@ -13,6 +13,21 @@
     cursor: pointer;
 }
 
+.footer span {
+    margin: 10px 0px;
+}
+
+.footer span p {
+    margin-bottom: 0px;
+}
+.footer span img {
+    margin: 10px;
+}
+.footer span {
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .icons ul {
         margin-bottom: 0px;

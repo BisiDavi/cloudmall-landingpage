@@ -1,0 +1,67 @@
+[
+    {
+        "row": [
+            {
+                "title": "We bring convenience to your finger tips.",
+                "text": "Buy anything from your favourite stores without leaving your location",
+                "image": null,
+                "downloadBtn": true
+            },
+            { "title": null, "text": null, "image": "", "downloadBtn": false }
+        ]
+    },
+    {
+        "row": [
+            { "title": null, "text": null, "image": "", "downloadBtn": false },
+            {
+                "title": "Shop for a large variety of items",
+                "text": "You can purchase food, Groceries and Daily needs, Raw food, Books, Dry Pet food, Wines, etc. without leaving your location",
+                "image": null,
+                "downloadBtn": true
+            }
+        ]
+    },
+    {
+        "row": [
+            {
+                "title": "Buy easily from your favourite local stores.",
+                "text": "Restaurants | Super Market (Groceries) | Finger Foods | Raw Food | Pharmacy | Book Shop | Drink Store | Pert Store, all in one place.",
+                "image": null,
+                "downloadBtn": true
+            },
+            {
+                "title": null,
+                "text": null,
+                "image": "/stores.png",
+                "downloadBtn": false
+            }
+        ]
+    },
+    {
+        "row": [
+            { "title": null, "text": null, "image": "/deliveryGuy.png", "downloadBtn": false },
+            {
+                "title": "You'll receive your order within 30 mins",
+                "text": "You can purchase your meals, Groceries and Daily needs, Raw food, Books, Dry Pet food, Wines, etc. without leaving your location.",
+                "image": null,
+                "downloadBtn": true
+            }
+        ]
+    },
+    {
+        "row": [
+            {
+                "title": "Track of your order and get timely status update",
+                "text": "Get update at each stage of your order from when you make payment down to delivery at your doorstep",
+                "image": null,
+                "downloadBtn": true
+            },
+            {
+                "title": null,
+                "text": null,
+                "image": "/order.png",
+                "downloadBtn": false
+            }
+        ]
+    }
+]

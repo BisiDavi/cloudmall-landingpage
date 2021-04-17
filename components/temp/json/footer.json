@@ -1,0 +1,78 @@
+{
+    "profile": [
+        { "type": "image", "icon": "/fullLogo.png" },
+        { "type": "button", "button": true },
+        {
+            "type": "text",
+            "text": "House 25, Ooni Crownland Estate, Damico, Ile-Ife, Osun State.",
+            "icon": "/location.png"
+        },
+        {
+            "type": "link",
+            "text": "https://wa.me/2349054096314",
+            "icon": "/whatsapp.png"
+        },
+        { "type": "number", "text": "09054096314", "icon": "/tel.png" },
+        {
+            "type": "email",
+            "text": "Cloudmallng@gmail.com",
+            "icon": "/email.png"
+        }
+    ],
+    "clients": [
+        {
+            "title": "Restaurants",
+            "links": [
+                "Banwil.",
+                "Captain Cook.",
+                "Country Kitchen.",
+                "Creme Castle.",
+                "Captain Cook.",
+                "Ongbonna.",
+                "Luxury Kitchen.",
+                "Iya Ila.",
+                "Staff Club.",
+                "and so much more."
+            ]
+        },
+        {
+            "title": "Finger Foods",
+            "links": [
+                "MD.",
+                "Nissi Foods.",
+                "Orente Grills.",
+                "Smoke House BBQ."
+            ]
+        },
+        {
+            "title": "Raw Food.",
+            "links": [
+                "Mayfair Market.",
+                "New Market.",
+                "Akinola Market.",
+                "Fresh farm.",
+                "Fruit Store."
+            ]
+        },
+        {
+            "title": "Super Market/Grocery.",
+            "links": ["Ace.", "G Mart."]
+        },
+        {
+            "title": "Pharmacy.",
+            "links": ["Campus Pharmacy.", "Mayfair Pharmacy."]
+        },
+        {
+            "title": "Drink Store.",
+            "links": ["Maintenance Gate Drinks.", "Mayfair Drinks."]
+        },
+        {
+            "title": "Bookshops.",
+            "links": ["Badejoko Bookshop."]
+        },
+        {
+            "title": "Pet Stores.",
+            "links": ["Mayfair petshop."]
+        }
+    ]
+}
