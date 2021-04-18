@@ -1,6 +1,5 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import Logo from "../Logo";
+import DownloadBtn from "./DownloadBtn";
 
 const Header = () => {
     return (
@@ -9,7 +8,7 @@ const Header = () => {
                 <div className="col-12 header">
                     <img src="/fullLogo.png" />
 
-                    <Button>Download App Now</Button>
+                    <DownloadBtn />
                 </div>
             </div>
             <style jsx>{`
@@ -18,6 +17,17 @@ const Header = () => {
                     align-items: center;
                     justify-content: space-between;
                     border-bottom: 1px solid black;
+                    padding: 0px 80px;
+                    z-index: 100;
+                    position: fixed;
+                    background: white;
+                }
+                @media (max-width: 480px) {
+                    .col-12.header {
+                        padding: 0px 15px;
+                        flex-direction: row;
+                        padding-bottom: 15px;
+                    }
                 }
             `}</style>
         </div>

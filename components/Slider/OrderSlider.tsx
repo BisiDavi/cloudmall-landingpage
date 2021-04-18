@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const OrderSlider: FC = (): JSX.Element => {
     const sliderRef = useRef(null);
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,

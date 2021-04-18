@@ -1,6 +1,8 @@
 import React from "react";
 import footerLinks from "../temp/json/footer.json";
 import DownloadBtn from "./DownloadBtn";
+import { FaCopyright } from "react-icons/fa";
+
 import styles from "../../styles/Footer.module.css";
 interface FooterLinkInterface {
     profile: any[];
@@ -51,6 +53,8 @@ const displayFooterLink = (link) => {
 
 const Footer = () => {
     const { profile, clients }: FooterLinkInterface = footerLinks;
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
     return (
         <footer className={styles.footer}>
             <div className="row footer-links">
@@ -78,7 +82,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className="row">
-                <h5 className="mx-auto copyright">Copyright CloudmallNG2021</h5>
+                <h5 className="mx-auto copyright d-flex align-items">
+                    Copyright.
+                    <span className="mx-1">
+                        <FaCopyright />
+                    </span>
+                    . CloudmallNG <span className="mx-1">{currentYear}</span>
+                </h5>
             </div>
             <style jsx>
                 {`
@@ -87,42 +97,7 @@ const Footer = () => {
                         font-size: 16px;
                         color: black;
                     }
-                    .stores {
-                        display: grid;
-                        width: 70%;
-                        grid-gap: 20px;
-                        grid-template-rows: repeat(4, 130px);
-                        grid-template-columns: repeat(
-                            auto-fit,
-                            minmax(200px, 1fr)
-                        );
-                    }
 
-                    .client.client-0 {
-                        grid-column: 1;
-                        grid-row: 1/5;
-                    }
-
-                    .client.client-1 {
-                        grid-column: 2;
-                        grid-row: 1/3;
-                    }
-
-                    .client.client-6 {
-                        grid-area: 2/5;
-                    }
-
-                    .client.client-5 {
-                        grid-area: 1/5;
-                    }
-
-                    .client.client-4 {
-                        grid-area: 2/4;
-                    }
-
-                    .client.client-7 {
-                        grid-area: 3/5;
-                    }
                     .profile {
                         width: 20%;
                     }
@@ -152,6 +127,61 @@ const Footer = () => {
                     }
                     h5.copyright {
                         font-size: 16px;
+                    }
+                    h5.copyright.d-flex.align-items span {
+                        margin: 0px;
+                    }
+                    @media (min-width: 768px) {
+                        .stores {
+                            display: grid;
+                            width: 70%;
+                            grid-gap: 20px;
+                            grid-template-rows: repeat(4, 130px);
+                            grid-template-columns: repeat(
+                                auto-fit,
+                                minmax(200px, 1fr)
+                            );
+                        }
+
+                        .client.client-0 {
+                            grid-column: 1;
+                            grid-row: 1/5;
+                        }
+
+                        .client.client-1 {
+                            grid-column: 2;
+                            grid-row: 1/3;
+                        }
+
+                        .client.client-6 {
+                            grid-area: 2/5;
+                        }
+
+                        .client.client-5 {
+                            grid-area: 1/5;
+                        }
+
+                        .client.client-4 {
+                            grid-area: 2/4;
+                        }
+
+                        .client.client-7 {
+                            grid-area: 3/5;
+                        }
+                    }
+                    @media (max-width: 480px) {
+                        footer {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        .stores {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                        .profile {
+                            width: 100%;
+                        }
                     }
                 `}
             </style>

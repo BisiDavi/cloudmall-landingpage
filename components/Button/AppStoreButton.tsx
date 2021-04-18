@@ -117,6 +117,19 @@ const AppstoreButton = () => {
                         </clipPath>
                     </defs>
                 </svg>
+                <style jsx>{`
+                    @media (max-width: 768px) {
+                        svg {
+                            width: 70%;
+                        }
+                    }
+                    @media (max-width: 480px) {
+                        svg {
+                            width: 80px;
+                            margin: 5px;
+                        }
+                    }
+                `}</style>
             </a>
         </div>
     );

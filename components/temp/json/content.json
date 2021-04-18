@@ -7,12 +7,24 @@
                 "image": null,
                 "downloadBtn": true
             },
-            { "title": null, "text": null, "image": "", "downloadBtn": false }
+            {
+                "title": null,
+                "text": null,
+                "type": "slider",
+                "className": "hasImage",
+                "downloadBtn": false
+            }
         ]
     },
     {
         "row": [
-            { "title": null, "text": null, "image": "", "downloadBtn": false },
+            {
+                "title": null,
+                "image": "/foods.png",
+                "text": null,
+                "className": "hasImage",
+                "downloadBtn": false
+            },
             {
                 "title": "Shop for a large variety of items",
                 "text": "You can purchase food, Groceries and Daily needs, Raw food, Books, Dry Pet food, Wines, etc. without leaving your location",
@@ -33,13 +45,20 @@
                 "title": null,
                 "text": null,
                 "image": "/stores.png",
+                "className": "hasImage",
                 "downloadBtn": false
             }
         ]
     },
     {
         "row": [
-            { "title": null, "text": null, "image": "/deliveryGuy.png", "downloadBtn": false },
+            {
+                "title": null,
+                "text": null,
+                "image": "/deliveryGuy.png",
+                "className": "hasImage",
+                "downloadBtn": false
+            },
             {
                 "title": "You'll receive your order within 30 mins",
                 "text": "You can purchase your meals, Groceries and Daily needs, Raw food, Books, Dry Pet food, Wines, etc. without leaving your location.",
@@ -60,6 +79,7 @@
                 "title": null,
                 "text": null,
                 "image": "/order.png",
+                "className": "hasImage",
                 "downloadBtn": false
             }
         ]
