@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { OrderSlider } from "../Slider";
 import DownloadBtn from "./DownloadBtn";
 import contents from "./json/content.json";
-import styles from '../../styles/PageSection.module.css';
+import styles from "../../styles/PageSection.module.css";
 
 const displaySection = () =>
     contents.map((content, index) => (
@@ -36,13 +36,22 @@ const displaySection = () =>
                     line-height: 72px;
                     letter-spacing: -0.0025em;
                 }
+                @media (max-width: 1024px) {
+                    section.row h1 {
+                        font-size: 35px;
+                        line-height: 50px;
+                    }
+                    section img {
+                        width: 70%;
+                    }
+                }
                 @media (max-width: 768px) {
                     section.row h1 {
                         font-size: 30px;
                         line-height: 35px;
                     }
                     section.row .hasImage img {
-                        width: 100%;
+                        width: 50%;
                         display: flex;
                         align-items: center;
                         justify-content: center;

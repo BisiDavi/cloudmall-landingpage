@@ -136,7 +136,7 @@ const Footer = () => {
                             display: grid;
                             width: 70%;
                             grid-gap: 20px;
-                            grid-template-rows: repeat(4, 130px);
+                            grid-template-rows: repeat(3, 130px);
                             grid-template-columns: repeat(
                                 auto-fit,
                                 minmax(200px, 1fr)
@@ -169,7 +169,82 @@ const Footer = () => {
                             grid-area: 3/5;
                         }
                     }
-                    @media (max-width: 768px) {
+                    @media (max-width: 1440px and min-width:1024px) {
+                        footer .stores .client p {
+                            font-size: 17px;
+                        }
+                        footer .stores .client h4 {
+                            font-size: 21px;
+                        }
+                        .stores {
+                            grid-column-gap: 5px;
+                        }
+
+                        .client.client-6 {
+                            grid-column: 5;
+                            grid-row: 2/3;
+                            margin-top: 50px;
+                        }
+
+                        .client.client-7 {
+                            grid-area: 3/5;
+                        }
+
+                        .client {
+                            width: 200px;
+                        }
+                    }
+                    @media (max-width: 1024px and min-width:768px) {
+                        .profile {
+                            width: 100%;
+                            position: relative;
+                            margin-bottom: 40px;
+                        }
+                        .column {
+                            width: 300px;
+                        }
+                        .profile .column.column-1 {
+                            margin: 0px;
+                        }
+                        .column.column-2 {
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                        }
+                        .column.column-3 {
+                            position: absolute;
+                            right: 0px;
+                            top: 40px;
+                        }
+                        .column.column-4 {
+                            position: absolute;
+                            right: 0;
+                            top: 80px;
+                        }
+                        .column.column-5 {
+                            position: absolute;
+                            right: 0px;
+                            top: 120px;
+                        }
+                        .stores {
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-rows: repeat(3, 1fr);
+                            width: 100%;
+                            margin-top: 30px;
+                        }
+
+                        footer .stores .client p {
+                            margin-bottom: 2px;
+                        }
+                        .client.client-6 {
+                            margin-top: 20px;
+                        }
+
+                        .client.client-4 {
+                            margin-top: 20px;
+                        }
+                    }
+                    @media (max-width: 768px and min-width:480px) {
                         footer {
                             margin: 0px 15px;
                             position: relative;
@@ -182,20 +257,75 @@ const Footer = () => {
                             font-size: 17px;
                             margin-bottom: 2px;
                         }
+                        .stores {
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-rows: repeat(3, 130px);
+                        }
+                        .client.client-0 {
+                            grid-row: 1/3;
+                            height: unset;
+                        }
+
+                        .client {
+                            height: unset;
+                        }
+
+                        .client.client-1 {
+                            grid-area: 1/2;
+                        }
+                        .client.client-2 {
+                            grid-area: 1/3;
+                        }
+                        .client.client-3 {
+                            grid-column: 3;
+                            grid-row: 3;
+                            margin-top: -50px;
+                        }
+                        .client.client-4 {
+                            grid-row: 3;
+                            grid-column: 2;
+                            margin-top: -50px;
+                        }
+                        .client.client-5 {
+                            grid-row: 2;
+                            grid-column: 2;
+                        }
+                        .client.client-6 {
+                            grid-column: 1;
+                            margin-top: 30px;
+                            grid-row: 3;
+                        }
+                        .client.client-7 {
+                            grid-row: 2;
+                            grid-column: 3;
+                            margin-top: 30px;
+                        }
                     }
 
                     @media (max-width: 480px) {
                         footer {
                             display: flex;
                             flex-direction: column;
+                            padding: 0px 15px;
+                        }
+                        .profile .column.column-0 img {
+                            width: 50%;
                         }
                         .profile .column.column-1 {
                             position: absolute;
                             right: 0px;
-                            top: 45px;
+                            top: 15px;
                             margin: 0px;
-                            width: 50%;
+                            width: 180px;
                             padding: 0px;
+                        }
+                        footer .stores .client h4 {
+                            font-size: 18px;
+                        }
+
+                        footer .stores .client p {
+                            font-size: 17px;
+                            margin-bottom: 2px;
                         }
                         .stores {
                             width: 100%;
@@ -207,6 +337,7 @@ const Footer = () => {
                         }
                         .profile {
                             width: 100%;
+                            position: relative;
                         }
                         .client.client-0 {
                             grid-column: 1;
@@ -223,12 +354,12 @@ const Footer = () => {
                         .client.client-3 {
                             grid-column: 1;
                             grid-row: 9/13;
-                            margin-top: 10px;
+                            margin-top: 20px;
                         }
                         .client.client-4 {
                             grid-column: 1;
                             grid-row: 12/14;
-                            margin-top: 5px;
+                            margin-top: 15px;
                         }
                         .client.client-5 {
                             grid-row: 10/12;
