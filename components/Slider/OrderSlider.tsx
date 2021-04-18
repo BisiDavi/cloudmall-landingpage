@@ -66,6 +66,7 @@ const OrderSlider: FC = (): JSX.Element => {
                     .OrderSlider {
                         width: 100%;
                         margin: 0px 20%;
+                        margin-top: -40px;
                     }
                 }
             `}</style>

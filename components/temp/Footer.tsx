@@ -311,16 +311,18 @@ const Footer = () => {
                         .profile .column.column-0 img {
                             width: 50%;
                         }
+
                         .profile .column.column-1 {
                             position: absolute;
                             right: 0px;
                             top: 15px;
                             margin: 0px;
-                            width: 180px;
+                            width: 160px;
                             padding: 0px;
                         }
                         footer .stores .client h4 {
                             font-size: 18px;
+                            margin-bottom: 2px;
                         }
 
                         footer .stores .client p {
@@ -331,7 +333,7 @@ const Footer = () => {
                             width: 100%;
                             display: grid;
                             grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: repeat(14, 30px);
+                            grid-template-rows: repeat(18, 30px);
                             grid-gap: 10px;
                             margin-top: 20px;
                         }
@@ -363,27 +365,47 @@ const Footer = () => {
                         }
                         .client.client-5 {
                             grid-row: 10/12;
+                            grid-column: 2;
                         }
                         .client.client-6 {
-                            grid-row: 12/14;
+                            grid-row: 13/16;
                             margin-top: 10px;
+                            grid-column: 2;
                         }
                         .client.client-7 {
                             grid-column: 2;
                             margin-top: -10px;
-                            grid-row: 14/16;
+                            grid-row: 15/16;
                         }
                     }
                     @media (max-width: 380px) {
-                        .client.client-7 {
-                            grid-column: 2;
-                            margin-top: -20px;
-                            grid-row: 15/16;
-                        }
                         .client.client-6 {
                             grid-row: 13/15;
                             grid-column: 2;
-                            margin-top: 0px;
+                            margin-top: 10px;
+                        }
+                        .client.client-3 {
+                            grid-column: 1;
+                            grid-row: 9/13;
+                            margin-top: 50px;
+                        }
+                        .profile .column.column-1 {
+                            margin-top: -10px;
+                            width: 160px;
+                        }
+                        .client.client-4 {
+                            grid-column: 1;
+                            grid-row: 12/14;
+                            margin-top: 60px;
+                        }
+                        .client.client-2 {
+                            grid-row: 5/9;
+                            margin-top: 20px;
+                        }
+                        .client.client-7 {
+                            grid-column: 2;
+                            margin-top: 30px;
+                            grid-row: 15/16;
                         }
                     }
                     @media (max-width: 340px) {
@@ -424,6 +446,10 @@ const Footer = () => {
                             grid-column: 1;
                             grid-row: 14/17;
                             margin-top: 10px;
+                        }
+                        .profile .column.column-1 {
+                            margin-top: -15px !important;
+                            width: 145px !important;
                         }
                     }
                 `}

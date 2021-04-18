@@ -64,6 +64,12 @@ const displaySection = () =>
                     section.row img {
                         width: 100%;
                     }
+                    section.row p {
+                        font: normal normal 18px/28px "Roboto";
+                    }
+                    section.row h1 {
+                        font-size: 25px;
+                    }
                 }
             `}</style>
         </section>
