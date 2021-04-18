@@ -129,6 +129,12 @@ const AppstoreButton = () => {
                             margin: 5px;
                         }
                     }
+                    @media (max-width: 340px) {
+                        svg {
+                            width: 70px;
+                            margin: 5px;
+                        }
+                    }
                 `}</style>
             </a>
         </div>

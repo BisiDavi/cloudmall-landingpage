@@ -28,6 +28,9 @@ const Header = () => {
                         flex-direction: row;
                         padding-bottom: 15px;
                     }
+                    .header img {
+                        width: 50%;
+                    }
                 }
             `}</style>
         </div>

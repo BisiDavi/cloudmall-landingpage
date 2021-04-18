@@ -2,10 +2,11 @@ import React, { FC } from "react";
 import { OrderSlider } from "../Slider";
 import DownloadBtn from "./DownloadBtn";
 import contents from "./json/content.json";
+import styles from '../../styles/PageSection.module.css';
 
 const displaySection = () =>
     contents.map((content, index) => (
-        <section key={index} className="row">
+        <section key={index} className={`${styles.section} row`}>
             {content.row.map((row, index) => (
                 <div className={`col-lg-6 col-12 ${row.className}`} key={index}>
                     {row.type === "slider" && <OrderSlider />}
@@ -41,10 +42,13 @@ const displaySection = () =>
                         line-height: 35px;
                     }
                     section.row .hasImage img {
-                        width: 50%;
+                        width: 100%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                    }
+                    .col-12.hasImage {
+                        order: 2;
                     }
                 }
                 @media (max-width: 480px) {

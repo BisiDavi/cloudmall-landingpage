@@ -2,8 +2,8 @@ import React from "react";
 import footerLinks from "../temp/json/footer.json";
 import DownloadBtn from "./DownloadBtn";
 import { FaCopyright } from "react-icons/fa";
-
 import styles from "../../styles/Footer.module.css";
+
 interface FooterLinkInterface {
     profile: any[];
     clients: {
@@ -15,7 +15,7 @@ interface FooterLinkInterface {
 const displayFooterLink = (link) => {
     switch (link.type) {
         case "image":
-            return <img src={link.icon} />;
+            return <img className={styles.logo} src={link.icon} />;
         case "button":
             return <DownloadBtn />;
         case "text":
@@ -169,10 +169,24 @@ const Footer = () => {
                             grid-area: 3/5;
                         }
                     }
+                    @media (max-width: 768px) {
+                        footer {
+                            margin: 0px 15px;
+                            position: relative;
+                        }
+                    }
                     @media (max-width: 480px) {
                         footer {
                             display: flex;
                             flex-direction: column;
+                        }
+                        .profile .column.column-1 {
+                            position: absolute;
+                            right: 0px;
+                            top: 45px;
+                            margin: 0px;
+                            width: 50%;
+                            padding: 0px;
                         }
                         .stores {
                             width: 100%;

@@ -15,6 +15,11 @@ const DownloadBtn = () => {
                     align-content: center;
                     justify-content: space-between;
                 }
+                @media (max-width: 768px) {
+                    section.row span {
+                        display: none;
+                    }
+                }
                 @media (max-width: 480px) {
                     span {
                         justify-content: flex-end;

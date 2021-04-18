@@ -62,6 +62,12 @@ const OrderSlider: FC = (): JSX.Element => {
                     margin: auto;
                     align-item: center;
                 }
+                @media (max-width: 480px) {
+                    .OrderSlider {
+                        width: 100%;
+                        margin: 0px 20%;
+                    }
+                }
             `}</style>
         </div>
     );

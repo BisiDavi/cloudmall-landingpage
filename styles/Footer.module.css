@@ -32,4 +32,12 @@
     .icons ul {
         margin-bottom: 0px;
     }
+
+    .footer span {
+        margin: 0px;
+    }
+    .logo {
+        width: 50%;
+        margin-top: 5px;
+    }
 }
