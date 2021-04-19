@@ -29,7 +29,7 @@ section.section:nth-child(5) {
 }
 
 @media (max-width: 768px) {
-    .section span svg {
+    .section span img {
         display: none;
     }
     .section.section h1 {
