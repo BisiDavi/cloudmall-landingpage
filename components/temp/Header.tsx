@@ -21,6 +21,7 @@ const Header = () => {
                     z-index: 100;
                     position: fixed;
                     background: white;
+                    top: 0px;
                 }
                 @media (max-width: 480px) {
                     .col-12.header {
