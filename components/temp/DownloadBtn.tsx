@@ -36,7 +36,7 @@ const DownloadBtn = () => {
                         display: flex;
                         flex-direction: row;
                         width: 185px;
-                        margin-right: -8px;
+                        margin-right: 8px;
                         margin-top: 10px;
                     }
                 }

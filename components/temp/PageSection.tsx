@@ -90,6 +90,9 @@ const displaySection = () =>
                     section.row:first-child {
                         padding-top: 35px;
                     }
+                    section.row {
+                        padding: 15px;
+                    }
                     section.row h1 {
                         font-size: 30px;
                         line-height: 35px;
