@@ -97,24 +97,26 @@ const Footer = () => {
                         font-family: "Roboto", sans-serif;
                         font-size: 16px;
                         color: black;
-                        padding: 50px 50px 10px 50px;
+                        padding: 50px 50px 20px 50px;
                     }
 
                     .stores {
-                        display: grid;
-                        grid-gap: 20px;
-                        grid-template-rows: repeat(3, 80px);
-                        grid-template-columns: repeat(5, 300px);
+                        display: flex;
+                    }
+
+                    .stores .client {
+                        margin: 0px 5px;
+                        text-align: left;
                     }
 
                     .profile {
                         width: 20%;
                     }
                     .client h4 {
-                        font: normal bold 20px/26px "Roboto";
+                        font: normal bold 16px/26px "Roboto";
                     }
                     .client p {
-                        font: normal normal 18px/21px "Roboto";
+                        font: normal normal 16px/21px "Roboto";
                     }
                     .row.footer-links {
                         margin: 40px auto;
@@ -141,39 +143,6 @@ const Footer = () => {
                         margin: 0px;
                     }
                     @media (min-width: 1460px) {
-                        .stores {
-                            display: grid;
-                            grid-gap: 20px;
-                            grid-template-rows: repeat(3, 80px);
-                            grid-template-columns: repeat(5, 300px);
-                        }
-
-                        .client.client-0 {
-                            grid-column: 1;
-                            grid-row: 1/5;
-                        }
-
-                        .client.client-1 {
-                            grid-column: 2;
-                            grid-row: 1/3;
-                        }
-
-                        .client.client-6 {
-                            grid-area: 2/5;
-                        }
-
-                        .client.client-5 {
-                            grid-area: 1/5;
-                        }
-
-                        .client.client-4 {
-                            grid-area: 2/4;
-                        }
-
-                        .client.client-7 {
-                            grid-area: 3/5;
-                            margin-top: -35px;
-                        }
                     }
                     @media (max-width: 1440px) and (min-width: 1024px) {
                         footer .stores .client p {
@@ -183,37 +152,7 @@ const Footer = () => {
                             font-size: 21px;
                         }
                         .stores {
-                            display: grid;
-                            grid-gap: 20px;
-                            grid-template-rows: repeat(3, 80px);
-                            grid-template-columns: repeat(5, 180px);
-                        }
-                        .client.client-0 {
-                            grid-column: 1;
-                            grid-row: 1/5;
-                        }
-
-                        .client.client-1 {
-                            grid-column: 2;
-                            grid-row: 1/3;
-                        }
-
-                        .client.client-6 {
-                            grid-area: 2/5;
-                        }
-
-                        .client.client-5 {
-                            grid-area: 1/5;
-                        }
-
-                        .client.client-4 {
-                            grid-area: 2/4;
-                            margin-top: 30px;
-                        }
-
-                        .client.client-7 {
-                            grid-area: 3/5;
-                            margin-top: -35px;
+                            width: 70%;
                         }
                     }
                     @media (max-width: 1024px) and (min-width: 768px) {
@@ -248,43 +187,20 @@ const Footer = () => {
                             right: 0px;
                             top: 120px;
                         }
-                        .stores {
-                            grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: repeat(3, 100px);
-                            width: 100%;
-                            margin-top: 30px;
-                        }
 
                         footer .stores .client p {
                             margin-bottom: 2px;
                         }
-                        .client.client-0 {
-                            grid-column: 1;
-                            grid-row: 1/5;
-                        }
-
-                        .client.client-1 {
-                            grid-column: 2;
-                            grid-row: 1/3;
-                        }
-
-                        .client.client-6 {
-                            grid-area: 2/5;
-                            margin-top: -30px;
-                        }
-
-                        .client.client-5 {
-                            grid-area: 1/5;
-                        }
-
-                        .client.client-4 {
-                            grid-area: 2/4;
-                            margin-top: -30px;
-                        }
-
-                        .client.client-7 {
-                            grid-area: 2/5;
-                            margin-top: 35px;
+                    }
+                    @media (max-width: 1024px) {
+                        .stores {
+                            display: grid;
+                            grid-template-columns: repeat(
+                                auto-fit,
+                                minmax(160px, 1fr)
+                            );
+                            width: 100%;
+                            margin: 20px 0px;
                         }
                     }
                     @media (max-width: 768px) and (min-width: 480px) {
@@ -299,50 +215,6 @@ const Footer = () => {
                         footer .stores .client p {
                             font-size: 17px;
                             margin-bottom: 2px;
-                        }
-
-                        .stores {
-                            grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: repeat(3, 110px);
-                        }
-                        .client.client-0 {
-                            grid-row: 1/3;
-                        }
-
-                        .client {
-                            height: unset;
-                        }
-
-                        .client.client-1 {
-                            grid-area: 1/2;
-                        }
-                        .client.client-2 {
-                            grid-area: 1/3;
-                        }
-                        .client.client-3 {
-                            grid-column: 3;
-                            grid-row: 3;
-                            margin-top: -55px;
-                        }
-                        .client.client-4 {
-                            grid-row: 3;
-                            grid-column: 2;
-                            margin-top: -50px;
-                        }
-                        .client.client-5 {
-                            grid-row: 2;
-                            grid-column: 2;
-                            margin-top: 0px;
-                        }
-                        .client.client-6 {
-                            grid-column: 1;
-                            margin-top: 0px;
-                            grid-row: 3;
-                        }
-                        .client.client-7 {
-                            grid-row: 2;
-                            grid-column: 3;
-                            margin-top: 20px;
                         }
                     }
 
@@ -377,120 +249,9 @@ const Footer = () => {
                             width: 100%;
                             position: relative;
                         }
-                        .stores {
-                            width: 100%;
-                            display: grid;
-                            grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: repeat(13, 30px);
-                            grid-gap: 10px;
-                            margin-top: 20px;
-                        }
-                        .client.client-0 {
-                            grid-column: 1;
-                            grid-row: 1/8;
-                        }
-                        .client.client-1 {
-                            grid-column: 2;
-                            grid-row: 1/4;
-                        }
-                        .client.client-2 {
-                            grid-row: 4/9;
-                            grid-column: 2;
-                            margin-top: 0px;
-                        }
-                        .client.client-3 {
-                            grid-column: 1;
-                            grid-row: 8/13;
-                            margin-top: -15px;
-                        }
-                        .client.client-4 {
-                            grid-column: 1;
-                            grid-row: 10/13;
-                            margin-top: 10px;
-                        }
-                        .client.client-5 {
-                            grid-row: 8/11;
-                            margin-top: -15px;
-                            grid-column: 2;
-                        }
-                        .client.client-6 {
-                            grid-row: 10/12;
-                            grid-column: 2;
-                            margin-top: 10px;
-                        }
-                        .client.client-7 {
-                            grid-column: 2;
-                            margin-top: 30px;
-                            grid-row: 11/13;
-                        }
                     }
-                    @media (max-width: 380px) {
-                        .client.client-7 {
-                            grid-column: 2;
-                            margin-top: -25px;
-                            grid-row: 12/14;
-                        }
-                        .client.client-6 {
-                            grid-row: 10/12;
-                            grid-column: 2;
-                            margin-top: 0px;
-                        }
-                        .client.client-5 {
-                            grid-row: 8/11;
-                            margin-top: -15px;
-                            grid-column: 2;
-                        }
-                        .client.client-4 {
-                            grid-column: 1;
-                            grid-row: 10/13;
-                        }
-                        .client.client-3 {
-                            grid-column: 1;
-                            grid-row: 8/10;
-                        }
-                        .client.client-2 {
-                            grid-row: 4/8;
-                            margin-top: 0px;
-                        }
-                    }
+
                     @media (max-width: 340px) {
-                        .client.client-0 {
-                            grid-column: 1;
-                            grid-row: 1/8;
-                        }
-                        .client.client-1 {
-                            grid-column: 2;
-                            grid-row: 1/4;
-                        }
-                        .client.client-2 {
-                            grid-column: 2;
-                            grid-row: 4/8;
-                        }
-                        .client.client-3 {
-                            grid-column: 1;
-                            grid-row: 7/10;
-                            margin-top: 20px;
-                        }
-                        .client.client-4 {
-                            grid-column: 1;
-                            grid-row: 10/13;
-                            margin-top: 5px;
-                        }
-                        .client.client-5 {
-                            grid-row: 8/11;
-                            grid-column: 2;
-                            margin-top: -10px;
-                        }
-                        .client.client-6 {
-                            grid-column: 2;
-                            grid-row: 11/13;
-                            margin-top: -30px;
-                        }
-                        .client.client-7 {
-                            grid-column: 1;
-                            grid-row: 12/14;
-                            margin-top: 5px;
-                        }
                         .profile .column.column-1 {
                             margin-top: -15px !important;
                             width: 145px !important;

@@ -21,24 +21,27 @@ const DownloadBtn = () => {
     };
     return (
         <>
-            <div className="downloadbtn">{detectOS()}</div>
+            <li className="downloadbtn">{detectOS()}</li>
             <style jsx>{`
-                div.downloadbtn {
+                li {
+                    list-style: none;
+                }
+                .downloadbtn {
                     width: fit-content;
                     display: flex;
                     align-content: center;
                     justify-content: space-between;
                 }
                 @media (max-width: 768px) {
-                    section.row div.downloadbtn {
+                    section.row .downloadbtn {
                         display: none;
                     }
-                    div.downloadbtn {
+                    .downloadbtn {
                         width: fit-content;
                     }
                 }
                 @media (max-width: 480px) {
-                    div.downloadbtn {
+                    .downloadbtn {
                         justify-content: flex-end;
                         display: flex;
                         flex-direction: row;
