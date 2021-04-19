@@ -17,11 +17,18 @@ const Header = () => {
                     align-items: center;
                     justify-content: space-between;
                     border-bottom: 1px solid black;
-                    padding: 0px 80px;
+                    padding: 0px 30px;
                     z-index: 100;
                     position: fixed;
                     background: white;
                     top: 0px;
+                }
+                @media (max-width: 768px) and (min-width: 480px) {
+                   
+                    .col-12.header {
+                        padding: 0px 20px;
+                        width: 100%;
+                    }
                 }
                 @media (max-width: 480px) {
                     .col-12.header {

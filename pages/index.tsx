@@ -18,12 +18,12 @@ const Temp = () => {
                     }
                     @media (max-width: 1024px) {
                         .container-fluid.content {
-                            padding: 0px 30px;
+                            padding: 0px;
                         }
                     }
                     @media (max-width: 768px) {
                         .container-fluid.content {
-                            padding: 10px 10px 0px 0px;
+                            padding: 0px;
                             margin-top: 50px;
                         }
                     }

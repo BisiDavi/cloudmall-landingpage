@@ -88,7 +88,7 @@ const displaySection = () =>
                 }
                 @media (max-width: 768px) {
                     section.row:first-child {
-                        padding-top: 35px;
+                        padding-top: 5px;
                     }
                     section.row {
                         padding: 15px;
@@ -96,6 +96,9 @@ const displaySection = () =>
                     section.row h1 {
                         font-size: 30px;
                         line-height: 35px;
+                    }
+                    section.row:first-child .undefined {
+                        margin: 40px 0px;
                     }
                     section.row .hasImage img {
                         width: 50%;
@@ -109,7 +112,7 @@ const displaySection = () =>
                 }
                 @media (max-width: 480px) {
                     section.row img {
-                        width: 100%;
+                        width: 100% !important;
                     }
                     section.row p {
                         font: normal normal 18px/28px "Roboto";

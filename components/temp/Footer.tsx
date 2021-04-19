@@ -100,6 +100,13 @@ const Footer = () => {
                         padding: 50px 50px 10px 50px;
                     }
 
+                    .stores {
+                        display: grid;
+                        grid-gap: 20px;
+                        grid-template-rows: repeat(3, 80px);
+                        grid-template-columns: repeat(5, 300px);
+                    }
+
                     .profile {
                         width: 20%;
                     }
@@ -133,16 +140,12 @@ const Footer = () => {
                     h5.copyright.d-flex.align-items span {
                         margin: 0px;
                     }
-                    @media (min-width: 768px) {
+                    @media (min-width: 1460px) {
                         .stores {
                             display: grid;
-                            width: 70%;
                             grid-gap: 20px;
-                            grid-template-rows: repeat(3, 130px);
-                            grid-template-columns: repeat(
-                                auto-fit,
-                                minmax(200px, 1fr)
-                            );
+                            grid-template-rows: repeat(3, 80px);
+                            grid-template-columns: repeat(5, 300px);
                         }
 
                         .client.client-0 {
@@ -169,9 +172,10 @@ const Footer = () => {
 
                         .client.client-7 {
                             grid-area: 3/5;
+                            margin-top: -35px;
                         }
                     }
-                    @media (max-width: 1440px and min-width:1024px) {
+                    @media (max-width: 1440px) and (min-width: 1024px) {
                         footer .stores .client p {
                             font-size: 17px;
                         }
@@ -179,24 +183,40 @@ const Footer = () => {
                             font-size: 21px;
                         }
                         .stores {
-                            grid-column-gap: 5px;
+                            display: grid;
+                            grid-gap: 20px;
+                            grid-template-rows: repeat(3, 80px);
+                            grid-template-columns: repeat(5, 180px);
+                        }
+                        .client.client-0 {
+                            grid-column: 1;
+                            grid-row: 1/5;
+                        }
+
+                        .client.client-1 {
+                            grid-column: 2;
+                            grid-row: 1/3;
                         }
 
                         .client.client-6 {
-                            grid-column: 5;
-                            grid-row: 2/3;
-                            margin-top: 50px;
+                            grid-area: 2/5;
+                        }
+
+                        .client.client-5 {
+                            grid-area: 1/5;
+                        }
+
+                        .client.client-4 {
+                            grid-area: 2/4;
+                            margin-top: 30px;
                         }
 
                         .client.client-7 {
                             grid-area: 3/5;
-                        }
-
-                        .client {
-                            width: 200px;
+                            margin-top: -35px;
                         }
                     }
-                    @media (max-width: 1024px and min-width:768px) {
+                    @media (max-width: 1024px) and (min-width: 768px) {
                         .profile {
                             width: 100%;
                             position: relative;
@@ -230,7 +250,7 @@ const Footer = () => {
                         }
                         .stores {
                             grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: repeat(3, 1fr);
+                            grid-template-rows: repeat(3, 100px);
                             width: 100%;
                             margin-top: 30px;
                         }
@@ -238,15 +258,36 @@ const Footer = () => {
                         footer .stores .client p {
                             margin-bottom: 2px;
                         }
+                        .client.client-0 {
+                            grid-column: 1;
+                            grid-row: 1/5;
+                        }
+
+                        .client.client-1 {
+                            grid-column: 2;
+                            grid-row: 1/3;
+                        }
+
                         .client.client-6 {
-                            margin-top: 20px;
+                            grid-area: 2/5;
+                            margin-top: -30px;
+                        }
+
+                        .client.client-5 {
+                            grid-area: 1/5;
                         }
 
                         .client.client-4 {
-                            margin-top: 20px;
+                            grid-area: 2/4;
+                            margin-top: -30px;
+                        }
+
+                        .client.client-7 {
+                            grid-area: 2/5;
+                            margin-top: 35px;
                         }
                     }
-                    @media (max-width: 768px and min-width:480px) {
+                    @media (max-width: 768px) and (min-width: 480px) {
                         footer {
                             margin: 0px 15px;
                             position: relative;
@@ -259,13 +300,13 @@ const Footer = () => {
                             font-size: 17px;
                             margin-bottom: 2px;
                         }
+
                         .stores {
                             grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: repeat(3, 130px);
+                            grid-template-rows: repeat(3, 110px);
                         }
                         .client.client-0 {
                             grid-row: 1/3;
-                            height: unset;
                         }
 
                         .client {
@@ -281,7 +322,7 @@ const Footer = () => {
                         .client.client-3 {
                             grid-column: 3;
                             grid-row: 3;
-                            margin-top: -50px;
+                            margin-top: -55px;
                         }
                         .client.client-4 {
                             grid-row: 3;
@@ -291,16 +332,17 @@ const Footer = () => {
                         .client.client-5 {
                             grid-row: 2;
                             grid-column: 2;
+                            margin-top: 0px;
                         }
                         .client.client-6 {
                             grid-column: 1;
-                            margin-top: 30px;
+                            margin-top: 0px;
                             grid-row: 3;
                         }
                         .client.client-7 {
                             grid-row: 2;
                             grid-column: 3;
-                            margin-top: 30px;
+                            margin-top: 20px;
                         }
                     }
 
@@ -331,123 +373,123 @@ const Footer = () => {
                             font-size: 17px;
                             margin-bottom: 2px;
                         }
-                        .stores {
-                            width: 100%;
-                            display: grid;
-                            grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: repeat(18, 30px);
-                            grid-gap: 10px;
-                            margin-top: 20px;
-                        }
                         .profile {
                             width: 100%;
                             position: relative;
                         }
+                        .stores {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-rows: repeat(13, 30px);
+                            grid-gap: 10px;
+                            margin-top: 20px;
+                        }
                         .client.client-0 {
                             grid-column: 1;
-                            grid-row: 1/9;
+                            grid-row: 1/8;
                         }
                         .client.client-1 {
                             grid-column: 2;
-                            grid-row: 1/5;
+                            grid-row: 1/4;
                         }
                         .client.client-2 {
-                            grid-row: 5/9;
-                            margin-top: 5px;
+                            grid-row: 4/9;
+                            grid-column: 2;
+                            margin-top: 0px;
                         }
                         .client.client-3 {
                             grid-column: 1;
-                            grid-row: 9/13;
-                            margin-top: 20px;
+                            grid-row: 8/13;
+                            margin-top: -15px;
                         }
                         .client.client-4 {
                             grid-column: 1;
-                            grid-row: 12/14;
-                            margin-top: 15px;
+                            grid-row: 10/13;
+                            margin-top: 10px;
                         }
                         .client.client-5 {
+                            grid-row: 8/11;
+                            margin-top: -15px;
+                            grid-column: 2;
+                        }
+                        .client.client-6 {
                             grid-row: 10/12;
                             grid-column: 2;
-                        }
-                        .client.client-6 {
-                            grid-row: 13/16;
                             margin-top: 10px;
-                            grid-column: 2;
-                        }
-                        .client.client-7 {
-                            grid-column: 2;
-                            margin-top: -10px;
-                            grid-row: 15/16;
-                        }
-                    }
-                    @media (max-width: 380px) {
-                        .client.client-6 {
-                            grid-row: 13/15;
-                            grid-column: 2;
-                            margin-top: 10px;
-                        }
-                        .client.client-3 {
-                            grid-column: 1;
-                            grid-row: 9/13;
-                            margin-top: 50px;
-                        }
-                        .profile .column.column-1 {
-                            margin-top: -10px;
-                            width: 160px;
-                        }
-                        .client.client-4 {
-                            grid-column: 1;
-                            grid-row: 12/14;
-                            margin-top: 60px;
-                        }
-                        .client.client-2 {
-                            grid-row: 5/9;
-                            margin-top: 20px;
                         }
                         .client.client-7 {
                             grid-column: 2;
                             margin-top: 30px;
-                            grid-row: 15/16;
+                            grid-row: 11/13;
+                        }
+                    }
+                    @media (max-width: 380px) {
+                        .client.client-7 {
+                            grid-column: 2;
+                            margin-top: -25px;
+                            grid-row: 12/14;
+                        }
+                        .client.client-6 {
+                            grid-row: 10/12;
+                            grid-column: 2;
+                            margin-top: 0px;
+                        }
+                        .client.client-5 {
+                            grid-row: 8/11;
+                            margin-top: -15px;
+                            grid-column: 2;
+                        }
+                        .client.client-4 {
+                            grid-column: 1;
+                            grid-row: 10/13;
+                        }
+                        .client.client-3 {
+                            grid-column: 1;
+                            grid-row: 8/10;
+                        }
+                        .client.client-2 {
+                            grid-row: 4/8;
+                            margin-top: 0px;
                         }
                     }
                     @media (max-width: 340px) {
                         .client.client-0 {
                             grid-column: 1;
-                            grid-row: 1/9;
+                            grid-row: 1/8;
                         }
                         .client.client-1 {
                             grid-column: 2;
-                            grid-row: 1/5;
+                            grid-row: 1/4;
                         }
                         .client.client-2 {
                             grid-column: 2;
-                            grid-row: 6/10;
-                            margin-top: -15px;
+                            grid-row: 4/8;
                         }
                         .client.client-3 {
                             grid-column: 1;
-                            grid-row: 9/13;
-                            margin-top: 10px;
+                            grid-row: 7/10;
+                            margin-top: 20px;
                         }
                         .client.client-4 {
                             grid-column: 1;
-                            grid-row: 12/14;
+                            grid-row: 10/13;
                             margin-top: 5px;
                         }
                         .client.client-5 {
-                            grid-row: 11/15;
+                            grid-row: 8/11;
                             grid-column: 2;
-                            margin-top: -20px;
+                            margin-top: -10px;
                         }
                         .client.client-6 {
                             grid-column: 2;
-                            grid-row: 14/16;
-                            margin-top: -10px;
+                            grid-row: 11/13;
+                            margin-top: -30px;
                         }
                         .client.client-7 {
                             grid-column: 1;
-                            grid-row: 14/17;
-                            margin-top: 10px;
+                            grid-row: 12/14;
+                            margin-top: 5px;
                         }
                         .profile .column.column-1 {
                             margin-top: -15px !important;
