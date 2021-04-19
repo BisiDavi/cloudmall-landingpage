@@ -87,6 +87,9 @@ const displaySection = () =>
                     }
                 }
                 @media (max-width: 768px) {
+                    section.row:first-child {
+                        padding-top: 35px;
+                    }
                     section.row h1 {
                         font-size: 30px;
                         line-height: 35px;
