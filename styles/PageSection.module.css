@@ -1,3 +1,16 @@
+section.section h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 72px;
+    color: #3e4044;
+    letter-spacing: -0.0025em;
+}
+
+section.section h1 span {
+    color: #f29100;
+}
+
 section.section:first-child,
 section.section:nth-child(4) {
     background-color: #faf5ed;
@@ -8,8 +21,17 @@ section.section:nth-child(5) {
     background-color: #d6e6ff;
 }
 
+@media (max-width: 1440px) {
+    section.section h1 {
+        font-size: 35px;
+    }
+}
+
 @media (max-width: 768px) {
     .section span svg {
         display: none;
+    }
+    .section.section h1 {
+        font-size: 30px;
     }
 }

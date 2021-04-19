@@ -4,14 +4,41 @@ import DownloadBtn from "./DownloadBtn";
 import contents from "./json/content.json";
 import styles from "../../styles/PageSection.module.css";
 
-const colorKeyWord = (words) => {
-    const convenience = "Convenience";
-    const localStores = "Local Stores";
-    const duration = "30 to 45 mins";
-    const statusUpdate = "Status update"
-    const regex = words.match()
-}
-
+const colorTitle = (word): JSX.Element => {
+    if (word !== null && word.match("convenience")) {
+        return (
+            <h1>
+                We bring <span>convenience</span> to your finger tips.
+            </h1>
+        );
+    } else if (word !== null && word.match("favourite local stores")) {
+        return (
+            <h1>
+                Buy easily from your <span>favourite local stores.</span>
+            </h1>
+        );
+    } else if (word !== null && word.match("30 to 45 mins")) {
+        return (
+            <h1>
+                Receive your orders within <span>30 to 45 mins.</span>
+            </h1>
+        );
+    } else if (word !== null && word.match("variety of items")) {
+        return (
+            <h1>
+                Shop for a large <span>variety of items.</span>
+            </h1>
+        );
+    } else if (word !== null && word.match("status update")) {
+        return (
+            <h1>
+                Track your order and get timely <span>status update.</span>
+            </h1>
+        );
+    } else {
+        return null;
+    }
+};
 
 const displaySection = () =>
     contents.map((content, index) => (
@@ -19,7 +46,7 @@ const displaySection = () =>
             {content.row.map((row, index) => (
                 <div className={`col-lg-6 col-12 ${row.className}`} key={index}>
                     {row.type === "slider" && <OrderSlider />}
-                    <h1>{row.title}</h1>
+                    {colorTitle(row.title)}
                     <p>{row.text}</p>
                     <img src={row.image} />
                     {row.downloadBtn && <DownloadBtn />}
@@ -36,6 +63,7 @@ const displaySection = () =>
                 }
                 section.row p {
                     font: normal normal 24px/36px "Roboto";
+                    color: #51555b;
                 }
                 section.row .hasImage {
                     display: flex;
@@ -91,4 +119,5 @@ const displaySection = () =>
 const PageSection: FC = (): JSX.Element => {
     return <>{displaySection()}</>;
 };
+
 export default PageSection;

@@ -1,16 +1,23 @@
 import React, { useEffect } from "react";
-import { detectOS } from "../../utils/detectOS";
+import { isMobile, isIOS, isAndroid } from "react-device-detect";
 import { AppstoreButton, PlaystoreButton } from "../Button";
 
 const DownloadBtn = () => {
-    useEffect(() => detectOS(), []);
-
-    return (
-        <>
-            <span>
+    const detectOS = () => {
+        return isMobile && isIOS ? (
+            <AppstoreButton />
+        ) : isMobile && isAndroid ? (
+            <PlaystoreButton />
+        ) : (
+            <>
                 <AppstoreButton />
                 <PlaystoreButton />
-            </span>
+            </>
+        );
+    };
+    return (
+        <>
+            <span>{detectOS()}</span>
             <style jsx>{`
                 span {
                     width: 300px;

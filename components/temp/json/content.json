@@ -3,8 +3,8 @@
         "row": [
             {
                 "title": "We bring convenience to your finger tips.",
-                "text": "Buy anything from your favourite stores without leaving your location",
-                "image": null,                
+                "text": "Buy anything you need from your favorite stores without leaving where you are.",
+                "image": null,
                 "downloadBtn": true
             },
             {
@@ -26,8 +26,8 @@
                 "downloadBtn": false
             },
             {
-                "title": "Shop for a large variety of items",
-                "text": "You can purchase food, Groceries and Daily needs, Raw food, Books, Dry Pet food, Wines, etc. without leaving your location",
+                "title": "Shop for a large variety of items.",
+                "text": "You can purchase food, Groceries, Daily needs, Raw food, Books, Dry Pet food, Wines, etc. without leaving your location.",
                 "image": null,
                 "downloadBtn": true
             }
@@ -37,7 +37,7 @@
         "row": [
             {
                 "title": "Buy easily from your favourite local stores.",
-                "text": "Restaurants | Super Market (Groceries) | Finger Foods | Raw Food | Pharmacy | Book Shop | Drink Store | Pet Store, all in one place.",
+                "text": "Restaurants | Super Market(Groceries) | Finger Foods | Raw Food | Pharmacies | Book Shops | Drink Stores | Pet Stores. All in one place.",
                 "image": null,
                 "downloadBtn": true
             },
@@ -60,8 +60,8 @@
                 "downloadBtn": false
             },
             {
-                "title": "You'll receive your order within 30 mins",
-                "text": "You can purchase your meals, Groceries and Daily needs, Raw food, Books, Dry Pet food, Wines, etc. without leaving your location.",
+                "title": "Receive your orders within 30 to 45 mins.",
+                "text": "Your order comes in as fast as possible. We also allow you to schedule orders for a later time and date.",
                 "image": null,
                 "downloadBtn": true
             }
@@ -70,8 +70,8 @@
     {
         "row": [
             {
-                "title": "Track of your order and get timely status update",
-                "text": "Get update at each stage of your order from when you make payment down to delivery at your doorstep",
+                "title": "Track your order and get timely status update.",
+                "text": "Get update at every stage of your order from payment of items down to delivery at your doorstep.",
                 "image": null,
                 "downloadBtn": true
             },
