@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { detectOS } from "../../utils/detectOS";
 import { AppstoreButton, PlaystoreButton } from "../Button";
 
 const DownloadBtn = () => {
+    useEffect(() => detectOS(), []);
+
     return (
         <>
             <span>

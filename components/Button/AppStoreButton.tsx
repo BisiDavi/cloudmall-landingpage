@@ -3,7 +3,10 @@ import React from "react";
 const AppstoreButton = () => {
     return (
         <div className="appstore">
-            <a href="#appstore-link">
+            <a
+                target="_blank"
+                href="https://apps.apple.com/ng/app/cloudmall-africa/id1562494135"
+            >
                 <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
                     <g clipPath="url(#clip0_app_papaa_plaay)">
                         <path

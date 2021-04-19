@@ -87,7 +87,8 @@ const Footer = () => {
                     <span className="mx-1">
                         <FaCopyright />
                     </span>
-                    . CloudmallNG <span className="mx-1">{currentYear}</span>
+                    . CloudmallAfrica{" "}
+                    <span className="mx-1">{currentYear}</span>
                 </h5>
             </div>
             <style jsx>
@@ -96,16 +97,17 @@ const Footer = () => {
                         font-family: "Roboto", sans-serif;
                         font-size: 16px;
                         color: black;
+                        padding: 50px 50px 10px 50px;
                     }
 
                     .profile {
                         width: 20%;
                     }
                     .client h4 {
-                        font: normal bold 25px/28px "Roboto";
+                        font: normal bold 20px/26px "Roboto";
                     }
                     .client p {
-                        font: normal normal 24px/28px "Roboto";
+                        font: normal normal 18px/21px "Roboto";
                     }
                     .row.footer-links {
                         margin: 40px auto;

@@ -4,6 +4,15 @@ import DownloadBtn from "./DownloadBtn";
 import contents from "./json/content.json";
 import styles from "../../styles/PageSection.module.css";
 
+const colorKeyWord = (words) => {
+    const convenience = "Convenience";
+    const localStores = "Local Stores";
+    const duration = "30 to 45 mins";
+    const statusUpdate = "Status update"
+    const regex = words.match()
+}
+
+
 const displaySection = () =>
     contents.map((content, index) => (
         <section key={index} className={`${styles.section} row`}>
@@ -19,7 +28,11 @@ const displaySection = () =>
             <style jsx>{`
                 section.row {
                     align-items: center;
-                    margin: 30px auto;
+                    margin: 0px auto;
+                    padding: 50px;
+                }
+                section.row:first-child {
+                    padding-top: 120px;
                 }
                 section.row p {
                     font: normal normal 24px/36px "Roboto";
