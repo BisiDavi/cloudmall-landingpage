@@ -4,7 +4,7 @@ import { AppstoreButton, PlaystoreButton } from "../Button";
 
 const DownloadBtn = () => {
     const detectOS = () => {
-        if (isMobile && isIOS) {
+        if (isIOS) {
             return <AppstoreButton />;
         } else if (isMobile && isAndroid) {
             return <PlaystoreButton />;

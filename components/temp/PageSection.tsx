@@ -44,7 +44,7 @@ const displaySection = () =>
     contents.map((content, index) => (
         <section key={index} className={`${styles.section} row`}>
             {content.row.map((row, index) => (
-                <div className={`col-lg-6 col-12 ${row.className}`} key={index}>
+                <div className={`col-lg-5 col-12 ${row.className}`} key={index}>
                     {row.type === "slider" && <OrderSlider />}
                     {colorTitle(row.title)}
                     <p>{row.text}</p>
@@ -56,25 +56,33 @@ const displaySection = () =>
                 section.row {
                     align-items: center;
                     margin: 0px auto;
-                    padding: 50px;
+                    padding: 50px 0px;
+                    justify-content: space-around;
                 }
                 section.row:first-child {
                     padding-top: 120px;
                 }
                 section.row p {
-                    font: normal normal 24px/36px "Roboto";
-                    color: #51555b;
+                    font: normal normal 24px/40px "Roboto";
+                    color: #3e4044;
+                    margin-top: 24px;
+                    margin-bottom: 36px;
                 }
                 section.row .hasImage {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                 }
-                section.row h1 {
+                section.row:first-child h1 {
                     font-family: "Montserrat", sans-serif;
                     font-weight: bold;
-                    font-size: 3.5rem;
+                    font-size: 56px;
                     line-height: 72px;
+                    letter-spacing: -0.0025em;
+                }
+                section.row h1 {
+                    font-size: 48px;
+                    line-height: 64px;
                     letter-spacing: -0.0025em;
                 }
                 @media (max-width: 1024px) {

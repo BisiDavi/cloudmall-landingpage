@@ -81,180 +81,140 @@ const Footer = () => {
                     ))}
                 </div>
             </div>
-            <div className="row">
+            <div className="copyright-row">
                 <h5 className="mx-auto copyright d-flex align-items">
                     Copyright.
                     <span className="mx-1">
                         <FaCopyright />
                     </span>
-                    . CloudmallAfrica{" "}
+                 <span>CloudmallAfrica </span>
                     <span className="mx-1">{currentYear}</span>
                 </h5>
             </div>
             <style jsx>
                 {`
                     footer {
+                        padding: 50px 80px 15px;
+                    }
+                    footer .row {
+                        display: grid;
+                        grid-template-columns: 2fr 10fr;
+                        grid-gap: 50px;
+                    }
+                    h4 {
+                        font-weight: bold;
+                    }
+                    h4,
+                    p {
+                        font-size: 16px;
                         font-family: "Roboto", sans-serif;
-                        font-size: 16px;
-                        color: black;
-                        padding: 50px 50px 20px 50px;
+                    }
+                    footer .stores {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        grid-template-rows: repeat(15, 10px);
+                        grid-row-gap: 20px;
+                        grid-column-gap: 10px;
+                    }
+                    .client.client-0 {
+                        grid-column: 1;
+                        grid-row: 1/16;
                     }
 
-                    .stores {
+                    .client.client-1 {
+                        grid-column: 2;
+                        grid-row: 1/8;
+                    }
+
+                    .client.client-2 {
+                        grid-column: 3;
+                        grid-row: 1/9;
+                    }
+                    .client.client-3 {
+                        grid-column: 4;
+                        grid-row: 1/5;
+                    }
+                    .client.client-4 {
+                        grid-column: 4;
+                        grid-row: 5/9;
+                    }
+                    .client.client-5 {
+                        grid-column: 5;
+                        grid-row: 1/5;
+                    }
+                    .client.client-6 {
+                        grid-column: 5;
+                        grid-row: 5/8;
+                    }
+                    .client.client-7 {
+                        grid-column: 5;
+                        grid-row: 8/11;
+                    }
+                    .copyright-row h5 {
                         display: flex;
-                    }
-
-                    .stores .client {
-                        margin: 0px 5px;
-                        text-align: left;
-                    }
-
-                    .profile {
-                        width: 20%;
-                    }
-                    .client h4 {
-                        font: normal bold 16px/26px "Roboto";
-                    }
-                    .client p {
-                        font: normal normal 16px/21px "Roboto";
-                    }
-                    .row.footer-links {
-                        margin: 40px auto;
-                        align-items: flex-start;
-                        justify-content: space-between;
-                    }
-                    .profile .column span {
-                        margin: 30px 0px;
-                    }
-                    .profile .column span p {
-                        margin-bottom: 0px;
-                    }
-                    .profile .column span {
-                        display: flex;
+                        justify-content: center;
                         align-items: center;
+                        margin: 80px auto 0px auto;
                     }
-                    .profile .column.column-1 {
-                        margin: 30px 0px 60px 15px;
-                    }
-                    h5.copyright {
-                        font-size: 16px;
-                    }
-                    h5.copyright.d-flex.align-items span {
-                        margin: 0px;
-                    }
-                    @media (min-width: 1460px) {
-                    }
-                    @media (max-width: 1440px) and (min-width: 1024px) {
-                        footer .stores .client p {
-                            font-size: 17px;
+
+                    @media (max-width: 768px) {
+                        footer {
+                            padding: 40px;
                         }
-                        footer .stores .client h4 {
-                            font-size: 21px;
-                        }
-                        .stores {
-                            width: 70%;
+                        footer .row {
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 1fr 10fr;
                         }
                     }
-                    @media (max-width: 1024px) and (min-width: 768px) {
-                        .profile {
-                            width: 100%;
-                            position: relative;
-                            margin-bottom: 40px;
-                        }
-                        .column {
-                            width: 300px;
-                        }
-                        .profile .column.column-1 {
-                            margin: 0px;
-                        }
-                        .column.column-2 {
-                            position: absolute;
-                            right: 0px;
-                            top: 0px;
-                        }
-                        .column.column-3 {
-                            position: absolute;
-                            right: 0px;
-                            top: 40px;
-                        }
-                        .column.column-4 {
-                            position: absolute;
-                            right: 0;
-                            top: 80px;
-                        }
-                        .column.column-5 {
-                            position: absolute;
-                            right: 0px;
-                            top: 120px;
+
+                    @media (max-width: 500px) {
+                        footer .row {
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 1fr 2fr;
                         }
 
-                        footer .stores .client p {
-                            margin-bottom: 2px;
-                        }
-                    }
-                    @media (max-width: 1024px) {
-                        .stores {
+                        footer .stores {
                             display: grid;
-                            grid-template-columns: repeat(
-                                auto-fit,
-                                minmax(160px, 1fr)
-                            );
-                            width: 100%;
-                            margin: 20px 0px;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-rows: repeat(22, 10px);
+                            grid-row-gap: 20px;
+                            grid-column-gap: 10px;
                         }
-                    }
-                    @media (max-width: 768px) and (min-width: 480px) {
-                        footer {
-                            margin: 0px 15px;
-                            position: relative;
+                        .client.client-0 {
+                            grid-column: 1;
+                            grid-row: 1/16;
                         }
-                        footer .stores .client h4 {
-                            font-size: 20px;
-                            margin-bottom: 2px;
+                        .client.client-1 {
+                            grid-column: 2;
+                            grid-row: 1/7;
                         }
-                        footer .stores .client p {
-                            font-size: 17px;
-                            margin-bottom: 2px;
+                        .client.client-2 {
+                            grid-column: 2;
+                            grid-row: 7/15;
                         }
-                    }
-
-                    @media (max-width: 480px) {
-                        footer {
-                            display: flex;
-                            flex-direction: column;
-                            padding: 0px 15px;
+                        .client.client-3 {
+                            grid-column: 1;
+                            grid-row: 15/19;
                         }
-                        .profile .column.column-0 img {
-                            width: 50%;
+                        .client.client-4 {
+                            grid-column: 1;
+                            grid-row: 19/23;
                         }
-
-                        .profile .column.column-1 {
-                            position: absolute;
-                            right: 0px;
-                            top: 15px;
-                            margin: 0px;
-                            width: 160px;
-                            padding: 0px;
+                        .client.client-5 {
+                            grid-column: 2;
+                            grid-row: 14/19;
+                            padding-top: 10px;
                         }
-                        footer .stores .client h4 {
-                            font-size: 18px;
-                            margin-bottom: 2px;
+                        .client.client-6 {
+                            padding-top: 10px;
+                            grid-column: 2;
+                            grid-row: 18/21;
                         }
 
-                        footer .stores .client p {
-                            font-size: 17px;
-                            margin-bottom: 2px;
-                        }
-                        .profile {
-                            width: 100%;
-                            position: relative;
-                        }
-                    }
-
-                    @media (max-width: 340px) {
-                        .profile .column.column-1 {
-                            margin-top: -15px !important;
-                            width: 145px !important;
+                        .client.client-7 {
+                            grid-column: 2;
+                            grid-row: 20/23;
+                            padding-top: 10px;
                         }
                     }
                 `}

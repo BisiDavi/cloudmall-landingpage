@@ -16,15 +16,13 @@ const Header = () => {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    border-bottom: 1px solid black;
-                    padding: 0px 30px;
+                    padding: 0px 70px;
                     z-index: 100;
                     position: fixed;
-                    background: white;
+                    background-color: #faf5ed;
                     top: 0px;
                 }
                 @media (max-width: 768px) and (min-width: 480px) {
-                   
                     .col-12.header {
                         padding: 0px 20px;
                         width: 100%;

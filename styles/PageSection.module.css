@@ -1,7 +1,7 @@
-section.section h1 {
+section.section:first-child h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 56px;
     line-height: 72px;
     color: #3e4044;
     letter-spacing: -0.0025em;
@@ -25,12 +25,22 @@ section.section:nth-child(5) {
     section.section h1 {
         font-size: 35px;
         line-height: 40px;
+        font-weight: bold;
     }
 }
 
 @media (max-width: 768px) {
-    .section  img {
+    section.section:first-child h1 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    section.section img {
         display: none;
+    }
+    section.section:first-child p {
+        font: normal normal 14px/20px "Roboto";
+        letter-spacing: 0.0025em;
+        color: #3e4044;
     }
     .section.section h1 {
         font-size: 30px;
