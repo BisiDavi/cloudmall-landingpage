@@ -87,7 +87,7 @@ const Footer = () => {
                     <span className="mx-1">
                         <FaCopyright />
                     </span>
-                 <span>CloudmallAfrica </span>
+                    <span>CloudmallAfrica </span>
                     <span className="mx-1">{currentYear}</span>
                 </h5>
             </div>
@@ -157,13 +157,25 @@ const Footer = () => {
                         margin: 80px auto 0px auto;
                     }
 
+                    @media (max-width: 1024px) and (min-width: 768px) {
+                        h4,
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    @media (max-width: 768px) and (min-width: 500x) {
+                        footer .row {
+                            grid-template-rows: 1fr 1fr;
+                        }
+                    }
+
                     @media (max-width: 768px) {
                         footer {
                             padding: 40px;
                         }
                         footer .row {
                             grid-template-columns: 1fr;
-                            grid-template-rows: 1fr 10fr;
                         }
                     }
 
@@ -215,6 +227,11 @@ const Footer = () => {
                             grid-column: 2;
                             grid-row: 20/23;
                             padding-top: 10px;
+                        }
+                        @media (max-width: 350px) {
+                            p {
+                                font-size: 14px;
+                            }
                         }
                     }
                 `}

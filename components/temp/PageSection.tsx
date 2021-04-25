@@ -81,8 +81,10 @@ const displaySection = () =>
                     letter-spacing: -0.0025em;
                 }
                 section.row h1 {
+                    font-family: "Montserrat", sans-serif;
                     font-size: 48px;
                     line-height: 64px;
+                    font-weight: bold;
                     letter-spacing: -0.0025em;
                 }
                 @media (max-width: 1024px) {
