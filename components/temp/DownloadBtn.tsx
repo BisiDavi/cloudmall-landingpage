@@ -1,23 +1,26 @@
 import React from "react";
-import { isMobile, isIOS, isAndroid, isBrowser } from "react-device-detect";
+import {
+    isMobile,
+    isIOS,
+    isAndroid,
+    isBrowser,
+    isDesktop,
+} from "react-device-detect";
 import { AppstoreButton, PlaystoreButton } from "../Button";
 
 const DownloadBtn = () => {
     const detectOS = () => {
-        if (isIOS) {
-            return <AppstoreButton />;
-        } else if (isMobile && isAndroid) {
-            return <PlaystoreButton />;
-        } else if (isBrowser) {
-            return (
-                <>
-                    <PlaystoreButton />
-                    <AppstoreButton />
-                </>
-            );
-        } else {
-            return null;
-        }
+        const downloadBtn = isIOS ? (
+            <AppstoreButton />
+        ) : isAndroid ? (
+            <PlaystoreButton />
+        ) : isDesktop ? (
+            <span>
+                <PlaystoreButton />
+                <AppstoreButton />
+            </span>
+        ) : null;
+        return downloadBtn;
     };
     return (
         <>

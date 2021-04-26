@@ -179,7 +179,7 @@ const Footer = () => {
                         }
                     }
 
-                    @media (max-width: 500px) {
+                    @media (max-width: 550px) {
                         footer .row {
                             grid-template-columns: 1fr;
                             grid-template-rows: 1fr 2fr;
@@ -227,6 +227,11 @@ const Footer = () => {
                             grid-column: 2;
                             grid-row: 20/23;
                             padding-top: 10px;
+                        }
+                        @media (max-width: 600px) {
+                            h4,p {
+                                font-size: 14px;
+                            }
                         }
                         @media (max-width: 350px) {
                             p {
