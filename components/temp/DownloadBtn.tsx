@@ -1,11 +1,5 @@
 import React from "react";
-import {
-    isMobile,
-    isIOS,
-    isAndroid,
-    isBrowser,
-    isDesktop,
-} from "react-device-detect";
+import { isIOS, isAndroid, isDesktop } from "react-device-detect";
 import { AppstoreButton, PlaystoreButton } from "../Button";
 
 const DownloadBtn = () => {
