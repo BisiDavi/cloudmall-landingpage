@@ -101,7 +101,7 @@ const displaySection = () =>
                         padding-top: 5px;
                     }
                     section.row {
-                        padding: 15px;
+                        padding: 50px 15px;
                     }
                     section.row h1 {
                         font-size: 30px;
@@ -121,8 +121,13 @@ const displaySection = () =>
                     }
                 }
                 @media (max-width: 480px) {
-                    section.row img {
-                        width: 100% !important;
+                    section.row:nth-child(4) .hasImage img,
+                    section.row:nth-child(5) .hasImage img {
+                        width: 60%;
+                    }
+
+                    section.row .hasImage img {
+                        width: 100%;
                     }
                     section.row p {
                         font: normal normal 18px/28px "Roboto";

@@ -229,7 +229,9 @@ const Footer = () => {
                             padding-top: 10px;
                         }
                         @media (max-width: 600px) {
-                            h4,p {
+                            h4,
+                            p,
+                            h5 {
                                 font-size: 14px;
                             }
                         }
