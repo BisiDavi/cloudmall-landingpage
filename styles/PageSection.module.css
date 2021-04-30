@@ -29,6 +29,11 @@ section.section:nth-child(5) {
     }
 }
 
+.section.section h1,
+.section.section p {
+    color: #3e4044;
+}
+
 @media (max-width: 768px) {
     section.section:first-child h1 {
         font-size: 32px;
