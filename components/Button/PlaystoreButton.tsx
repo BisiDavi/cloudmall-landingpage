@@ -19,8 +19,9 @@ const PlaystoreButton = () => {
                 }
                 @media (max-width: 480px) {
                     img {
-                        width: 80px;
+                        width: 120px;
                         margin: 5px;
+                        height: 36px;
                     }
                 }
                 @media (max-width: 340px) {

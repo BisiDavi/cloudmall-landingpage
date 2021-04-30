@@ -104,8 +104,9 @@ const displaySection = () =>
                         padding: 50px 15px;
                     }
                     section.row h1 {
-                        font-size: 30px;
-                        line-height: 35px;
+                        font-size: 32px;
+                        line-height: 48px;
+                        color: #3e4044;
                     }
                     section.row:first-child .undefined {
                         margin: 40px 0px;
@@ -121,9 +122,16 @@ const displaySection = () =>
                     }
                 }
                 @media (max-width: 480px) {
+                    section.row:first-child .hasImage img,
                     section.row:nth-child(4) .hasImage img,
                     section.row:nth-child(5) .hasImage img {
-                        width: 60%;
+                        width: 70%;
+                    }
+
+                    section.row h1 {
+                        font-size: 32px;
+                        line-height: 48px;
+                        color: #3e4044;
                     }
 
                     section.row .hasImage img {

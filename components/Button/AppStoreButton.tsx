@@ -20,8 +20,9 @@ const AppstoreButton = () => {
                 }
                 @media (max-width: 480px) {
                     img {
-                        width: 100px;
+                        width: 120px;
                         margin: 5px;
+                        height:36px;
                     }
                 }
                 @media (max-width: 340px) {
