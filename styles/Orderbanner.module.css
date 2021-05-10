@@ -67,7 +67,8 @@
         font-weight: bold;
     }
     .column1 p {
-        margin-bottom: 5px;
+        margin-bottom: 50px;
+        margin-top: -20px;
     }
     .orderbanner button {
         width: 100px;
