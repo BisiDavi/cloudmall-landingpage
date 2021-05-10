@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Policy = ({ showModal }) => {
     const [policy, setPolicy] = useState(true);
     const hidePolicy = () => setPolicy(false);
     return policy ? (
-        <div className="policy">
-            <div className="content">
+        <div className='policy'>
+            <div className='content'>
                 <p>
                     By using this website you agree to our
                     <span onClick={showModal}>cookie policy</span>
                 </p>
-                <button onClick={hidePolicy} className="dismiss">
+                <button onClick={hidePolicy} className='dismiss'>
                     Dismiss
                 </button>
             </div>
@@ -64,6 +64,16 @@ const Policy = ({ showModal }) => {
                             width: 80%;
                             font-size: 12px;
                             justify-content: space-between;
+                        }
+                    }
+                    @media (max-width: 450px) {
+                        button.dismiss {
+                            font-size: 10px;
+                            height: 30px;
+                        }
+                        .policy .content p {
+                            font-size: 12px;
+                            margin: auto;
                         }
                     }
                 `}
