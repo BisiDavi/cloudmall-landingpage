@@ -74,6 +74,7 @@ const Policy = ({ showModal }) => {
                         .policy .content p {
                             font-size: 12px;
                             margin: auto;
+                            text-align: center;
                         }
                     }
                 `}
