@@ -1,12 +1,12 @@
 .newslettersubscribe {
     background-color: orange;
-    background-image: url("/food_bg.webp");
+    background-image: url('/food_bg.webp');
     height: 500px;
 }
 
 .newsletter {
     height: 500px;
-    background-image: url("/orange_bg.webp");
+    background-image: url('/orange_bg.webp');
 }
 
 .overlay {
@@ -74,5 +74,17 @@
     .newsletterform button {
         width: 80%;
         margin: 0px 0px 20px 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    form.newsletterform button {
+        padding: 0px 10px;
+        height: 50px;
+        width: 150px;
+    }
+    .newsletterform input {
+        height: 50px;
+        width: 80%;
     }
 }

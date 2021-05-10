@@ -55,6 +55,7 @@ const Newsletter = () => {
                                 font-size: 15px;
                             }
                         }
+                        
                     `}
                 </style>
             </Row>
