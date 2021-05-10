@@ -1,7 +1,7 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { NewsletterForm } from "../Form";
-import styles from "../../styles/Newsletter.module.css";
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { NewsletterForm } from '../Form';
+import styles from '../../styles/Newsletter.module.css';
 
 const Newsletter = () => {
     return (
@@ -45,8 +45,6 @@ const Newsletter = () => {
                                 padding: 20px 0;
                                 width: 100%;
                             }
-                        }
-                        @media (max-width: 768px) {
                             h3 {
                                 font-size: 25px;
                                 margin-top: 15px;
@@ -55,7 +53,15 @@ const Newsletter = () => {
                                 font-size: 15px;
                             }
                         }
-                        
+                        @media (max-width: 450px) {
+                            h3 {
+                                font-size: 18px;
+                                margin-top: 10px;
+                            }
+                            p {
+                                font-size: 13px;
+                            }
+                        }
                     `}
                 </style>
             </Row>
