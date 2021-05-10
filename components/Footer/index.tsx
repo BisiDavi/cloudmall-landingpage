@@ -1,33 +1,33 @@
-import React from "react";
-import Link from "next/link";
-import { AppstoreButton, PlaystoreButton } from "../Button";
-import { v4 as uuidv4 } from "uuid";
-import Logo from "../Logo";
-import styles from "../../styles/Footer.module.css";
+import React from 'react';
+import Link from 'next/link';
+import { AppstoreButton, PlaystoreButton } from '../Button';
+import { v4 as uuidv4 } from 'uuid';
+import Logo from '../Logo';
+import styles from '../../styles/Footer.module.css';
 import {
     FaFacebook,
     FaInstagram,
     FaTwitter,
     FaMedium,
     FaCopyright,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 const Footer = () => {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
-    const cities = ["Lagos", "Ile-Ife"];
-    const popularVendors = ["Banwil", "Ace", "Nissi Foods"];
+    const cities = ['Lagos', 'Ile-Ife'];
+    const popularVendors = ['Banwil', 'Ace', 'Nissi Foods'];
     const SocialIcons = [
         {
             icon: <FaFacebook />,
-            link: "https://m.facebook.com/cloudmallafrica/",
+            link: 'https://m.facebook.com/cloudmallafrica/',
         },
         {
             icon: <FaInstagram />,
-            link: "https://instagram.com/cloudmallafrica",
+            link: 'https://instagram.com/cloudmallafrica',
         },
-        { icon: <FaTwitter />, link: "https://twitter.com/cloudmallafrica" },
-        { icon: <FaMedium />, link: "https://link.medium.com/Z8cgBNZ5mfb" },
+        { icon: <FaTwitter />, link: 'https://twitter.com/cloudmallafrica' },
+        { icon: <FaMedium />, link: 'https://link.medium.com/Z8cgBNZ5mfb' },
     ];
     const displayList = (listArr) => (
         <ul>
@@ -65,8 +65,8 @@ const Footer = () => {
             {SocialIcons.map((link, index) => (
                 <li key={index}>
                     <a
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        rel='noopener noreferrer'
+                        target='_blank'
                         href={link.link}
                     >
                         {link.icon}
@@ -107,43 +107,43 @@ const Footer = () => {
         </ul>
     );
     return (
-        <footer className="container-fluid">
-            <div className="row">
-                <div className="col-lg-4 col-sm-12">
-                    <div className="row footer-logo">
-                        <span className="footer-logo">
+        <footer className='container-fluid'>
+            <div className='row'>
+                <div className='col-lg-4 col-sm-12'>
+                    <div className='row footer-logo'>
+                        <span className='footer-logo'>
                             <Logo />
                         </span>
-                        <Link href="/terms-and-conditions" passHref>
+                        <Link href='/terms-and-conditions' passHref>
                             <a>Our Terms & Conditions</a>
                         </Link>
-                        <Link href="/privacy-policies" passHref>
+                        <Link href='/privacy-policies' passHref>
                             <a>Our Privacy Policies</a>
                         </Link>
                     </div>
                 </div>
-                <div className="col-lg-4 col-6">
-                    <div className="row list">
+                <div className='col-lg-4 col-6'>
+                    <div className='row list'>
                         <h1>City</h1>
                         {displayList(cities)}
                     </div>
                 </div>
-                <div className="col-lg-4 col-6">
-                    <div className="row list">
+                <div className='col-lg-4 col-6'>
+                    <div className='row list'>
                         <h1>Popular vendors</h1>
                         {displayList(popularVendors)}
                     </div>
                 </div>
             </div>
-            <div className="row copyright">
-                <div className="col-lg-6 col-sm-12 site-title">
+            <div className='row copyright'>
+                <div className='col-lg-6 col-sm-12 site-title'>
                     <span>
                         <FaCopyright />
                     </span>
                     <p>{currentYear} Cloudmall Africa</p>
                 </div>
                 <div className={`col-lg-6 col-sm-12 icons ${styles.icons}`}>
-                    <div className="row">{displaySocalLink()}</div>
+                    <div className='row'>{displaySocalLink()}</div>
                 </div>
             </div>
             <style jsx>{`
@@ -240,6 +240,11 @@ const Footer = () => {
                     }
                     footer .btnGrp {
                         width: 100%;
+                    }
+                }
+                @media (max-width: 450px) {
+                    .row.footer-logo a {
+                        font-size: 16px;
                     }
                 }
             `}</style>

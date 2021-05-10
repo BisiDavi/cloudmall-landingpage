@@ -22,3 +22,9 @@
         font-weight: bold;
     }
 }
+
+@media (max-width: 500px) {
+    .nav {
+        margin: 0px 20px;
+    }
+}
