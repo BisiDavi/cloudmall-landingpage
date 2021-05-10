@@ -65,10 +65,14 @@
         text-align: center;
         margin-bottom: 20px;
         font-weight: bold;
+        line-height: 28px;
     }
     .column1 p {
         margin-bottom: 50px;
-        margin-top: -20px;
+        margin-top: -10px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
     }
     .orderbanner button {
         width: 100px;
