@@ -1,36 +1,15 @@
 import React from "react";
-import Header from "../components/temp/Header";
-import PageSection from "../components/temp/PageSection";
-import Footer from "../components/temp/Footer";
+import Pagelayout from "../containers/Pagelayout";
+import { InfoBanner, Newsletter, OrderBanner } from "../components/Banner";
+import { MainSlider } from "../components";
 
-const Temp = () => {
+export default function Home() {
     return (
-        <>
-            <Header />
-            <div className="container-fluid content">
-                <PageSection />
-                <Footer />
-                <style jsx>{`
-                    .container-fluid.content {
-                        padding: 0px;
-                        overflow: hidden;
-                        margin-top: 0px;
-                    }
-                    @media (max-width: 1024px) {
-                        .container-fluid.content {
-                            padding: 0px;
-                        }
-                    }
-                    @media (max-width: 768px) {
-                        .container-fluid.content {
-                            padding: 0px;
-                            margin-top: 50px;
-                        }
-                    }
-                `}</style>
-            </div>
-        </>
+        <Pagelayout title="...Your delivery in less than 1 hour">
+            <OrderBanner />
+            <MainSlider />
+            <InfoBanner />
+            <Newsletter />
+        </Pagelayout>
     );
-};
-
-export default Temp;
+}
