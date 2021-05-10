@@ -87,4 +87,8 @@
         height: 50px;
         width: 80%;
     }
+    .newslettersubscribe {
+        height: 200px;
+        background-size: cover;
+    }
 }
