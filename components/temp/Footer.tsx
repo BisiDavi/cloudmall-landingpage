@@ -83,11 +83,10 @@ const Footer = () => {
             </div>
             <div className="copyright-row">
                 <h5 className="mx-auto copyright d-flex align-items">
-                    Copyright.
                     <span className="mx-1">
                         <FaCopyright />
                     </span>
-                    <span>CloudmallAfrica </span>
+                    <span>Africa Technological Innovation Systems </span>
                     <span className="mx-1">{currentYear}</span>
                 </h5>
             </div>
