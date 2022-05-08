@@ -140,7 +140,7 @@ const Footer = () => {
                     <span>
                         <FaCopyright />
                     </span>
-                    <p>{currentYear} Cloudmall Africa</p>
+                    <p>{currentYear} Africa Technological Innovation Systems </p>
                 </div>
                 <div className={`col-lg-6 col-sm-12 icons ${styles.icons}`}>
                     <div className='row'>{displaySocalLink()}</div>
