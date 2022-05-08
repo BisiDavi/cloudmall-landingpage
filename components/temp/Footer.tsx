@@ -176,6 +176,9 @@ const Footer = () => {
                         footer .row {
                             grid-template-columns: 1fr;
                         }
+                        .copyright-row h5 {
+                             font-size:12px;
+                    }
                     }
 
                     @media (max-width: 550px) {
